@@ -118,6 +118,7 @@ window.OMNIUY = {
       antetitulo: "Capturas",
       titulo: "Así se ve Omniuy",
       intro: "Deslizá para ver más.",
+      introEscritorio: "Usá las flechas para ver más.",   // En computadoras
     },
 
     instalar: {
