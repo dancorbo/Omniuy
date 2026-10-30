@@ -168,11 +168,22 @@
     <!-- ================= CAPTURAS ================= -->
     <section class="seccion" id="capturas">
       <div class="contenedor">
-        <header class="seccion__cabeza revelar">
-          <span class="antetitulo" data-t="capturas.antetitulo"></span>
-          <h2 data-t="capturas.titulo"></h2>
-          <p class="seccion__intro" data-t="capturas.intro"></p>
-        </header>
+        <div class="capturas__cabeza">
+          <header class="seccion__cabeza revelar">
+            <span class="antetitulo" data-t="capturas.antetitulo"></span>
+            <h2 data-t="capturas.titulo"></h2>
+            <p class="seccion__intro" data-capturas-intro data-t="capturas.intro"></p>
+          </header>
+          <!-- Flechas: solo aparecen en computadoras (con mouse) -->
+          <div class="flechas revelar" data-flechas hidden>
+            <button type="button" class="flecha" data-desplazar="-1" aria-label="Ver capturas anteriores">
+              <span data-icono="izquierda"></span>
+            </button>
+            <button type="button" class="flecha" data-desplazar="1" aria-label="Ver más capturas">
+              <span data-icono="derecha"></span>
+            </button>
+          </div>
+        </div>
         <div class="carrusel" id="lista-capturas" tabindex="0" aria-label="Capturas de pantalla"></div>
       </div>
     </section>

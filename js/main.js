@@ -27,6 +27,8 @@
     sinAnuncios: '<circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/>',
     escudo: '<path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/>',
     correo: '<rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5L12 13l8.5-6.5"/>',
+    izquierda: '<path d="M15 18l-6-6 6-6"/>',
+    derecha: '<path d="M9 18l6-6-6-6"/>',
     imagen: '<rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/>'
   };
 
@@ -258,6 +260,49 @@
     });
   }
 
+  /* ---------- Flechas del carrusel (computadoras con mouse) ---------- */
+  function carruselConFlechas() {
+    var carrusel = document.getElementById('lista-capturas');
+    var flechas = $('[data-flechas]');
+    var conMouse = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    if (!carrusel || !flechas || !conMouse) return;
+
+    var intro = $('[data-capturas-intro]');
+    var textoEscritorio = C && C.textos && C.textos.capturas && C.textos.capturas.introEscritorio;
+    var botones = $$('[data-desplazar]', flechas);
+
+    function paso() {
+      var tarjeta = $('.captura', carrusel);
+      var ancho = tarjeta ? tarjeta.getBoundingClientRect().width + 16 : 256;
+      // Avanza de a varias capturas, sin pasarse de lo que se ve
+      return Math.max(ancho, Math.floor(carrusel.clientWidth / ancho) * ancho);
+    }
+
+    function actualizar() {
+      var maximo = carrusel.scrollWidth - carrusel.clientWidth;
+      var hayMas = maximo > 4;
+      flechas.hidden = !hayMas;
+      if (intro && textoEscritorio) intro.textContent = hayMas ? textoEscritorio : '';
+      botones.forEach(function (b) {
+        b.disabled = Number(b.getAttribute('data-desplazar')) < 0
+          ? carrusel.scrollLeft <= 4
+          : carrusel.scrollLeft >= maximo - 4;
+      });
+    }
+
+    botones.forEach(function (b) {
+      b.addEventListener('click', function () {
+        carrusel.scrollBy({
+          left: Number(b.getAttribute('data-desplazar')) * paso(),
+          behavior: reducirMovimiento ? 'auto' : 'smooth'
+        });
+      });
+    });
+    carrusel.addEventListener('scroll', function () { window.requestAnimationFrame(actualizar); }, { passive: true });
+    window.addEventListener('resize', actualizar);
+    actualizar();
+  }
+
   /* ---------- Íconos en el HTML ---------- */
   function pintarIconos() {
     $$('[data-icono]').forEach(function (el) {
@@ -332,6 +377,7 @@
   }
   animarAlAparecer();
   seguirScroll();
+  carruselConFlechas();
 
   // Detiene el ómnibus del mapa si el celular pide reducir movimiento
   var mapa = $('[data-mapa]');
