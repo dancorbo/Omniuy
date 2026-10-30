@@ -124,6 +124,11 @@ h1, h2, h3 { line-height: 1.12; letter-spacing: -.02em; }
 .btn--chico { gap: 6px; padding: 9px 16px; border-radius: 12px; font-size: .92rem; }
 .btn--chico [data-icono] svg { width: 18px; height: 18px; }
 .btn--grande { width: 100%; padding: 16px 24px; }
+/* Descarga pausada desde config.js */
+.btn--pausado { opacity: .55; cursor: not-allowed; box-shadow: none; filter: saturate(.4); }
+.btn--pausado:hover { box-shadow: none; }
+.btn--pausado::after { display: none; }
+
 .btn--play {
   width: 100%; padding: 14px 24px;
   background: rgba(255, 255, 255, .05);
@@ -143,7 +148,12 @@ h1, h2, h3 { line-height: 1.12; letter-spacing: -.02em; }
 }
 
 @media (min-width: 480px) {
-  .btn--grande, .btn--play { width: auto; }
+  .btn--grande, /* Descarga pausada desde config.js */
+.btn--pausado { opacity: .55; cursor: not-allowed; box-shadow: none; filter: saturate(.4); }
+.btn--pausado:hover { box-shadow: none; }
+.btn--pausado::after { display: none; }
+
+.btn--play { width: auto; }
 }
 
 /* ---------- Portada (hero) ---------- */

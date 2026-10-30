@@ -25,6 +25,9 @@ window.OMNIUY = {
   /* ---------- DESCARGA ---------- */
   repo: "dancorbo/Omniuy",        // Repositorio de GitHub (usuario/nombre)
   descarga: {
+    // ¿Se puede descargar? true = sí · false = botones bloqueados con un aviso
+    habilitada: false,
+    avisoPausa: "Las descargas están pausadas por un momento. ¡Volvé pronto!",
     // Siempre apunta al APK del ÚLTIMO Release. No hace falta cambiarlo.
     enlaceApk: "https://github.com/dancorbo/Omniuy/releases/latest/download/omniuy.apk",
     archivo: "omniuy.apk",        // Nombre EXACTO del APK que subís a cada Release
