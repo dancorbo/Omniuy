@@ -125,16 +125,39 @@
     // Logo
     if (C.logo) $$('[data-logo]').forEach(function (img) { img.src = C.logo; });
 
-    // Botones de descarga
-    var enlaceApk = C.descarga && C.descarga.enlaceApk;
-    if (enlaceApk) $$('[data-apk]').forEach(function (a) { a.href = enlaceApk; });
+    // Botones de descarga (o bloqueados, si las descargas están pausadas)
+    var descarga = C.descarga || {};
+    var descargaActiva = descarga.habilitada !== false;
+    var avisoPausa = descarga.avisoPausa || 'Las descargas están pausadas por un momento.';
+    $$('[data-apk]').forEach(function (a) {
+      if (descargaActiva) {
+        if (descarga.enlaceApk) a.href = descarga.enlaceApk;
+        return;
+      }
+      a.removeAttribute('href');
+      a.setAttribute('role', 'button');
+      a.setAttribute('tabindex', '0');
+      a.setAttribute('aria-disabled', 'true');
+      a.classList.add('btn--pausado');
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        mostrarToast(avisoPausa);
+      });
+      a.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); mostrarToast(avisoPausa); }
+      });
+    });
 
     var requisitos = C.descarga && C.descarga.requisitos;
     if (requisitos) $$('[data-requisitos]').forEach(function (el) { el.textContent = ' · ' + requisitos; });
 
     // Versión
     if (C.version) pintarVersion(C.version.numero, C.version.fecha);
-    leerReleaseDeGitHub();
+    if (descargaActiva) {
+      leerReleaseDeGitHub();
+    } else {
+      $$('[data-version-linea]').forEach(function (el) { el.textContent = 'Descargas pausadas'; });
+    }
 
     // Google Play
     var play = C.googlePlay || {};
