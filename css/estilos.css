@@ -196,18 +196,13 @@ h1, h2, h3 { line-height: 1.12; letter-spacing: -.02em; }
 .hero__visual { position: relative; display: flex; justify-content: center; padding: 0 24px; }
 .telefono {
   position: relative;
-  width: min(290px, 74vw); aspect-ratio: 9 / 19;
+  width: min(290px, 74vw);
   padding: 10px; border-radius: 46px;
   background: linear-gradient(150deg, #34343A, #0B0B0C);
   box-shadow: 0 50px 90px -40px rgba(0, 0, 0, .8), inset 0 0 0 1.5px rgba(255, 255, 255, .14);
   animation: flotar 7s ease-in-out infinite;
 }
-.telefono::before {
-  content: ""; position: absolute; z-index: 2; top: 20px; left: 50%;
-  width: 22px; height: 22px; border-radius: 50%; transform: translateX(-50%);
-  background: #05080C; box-shadow: inset 0 0 0 3px #111823;
-}
-.telefono__pantalla { position: relative; height: 100%; overflow: hidden; border-radius: 36px; background: #0C0C0C; }
+.telefono__pantalla { position: relative; aspect-ratio: 1080 / 2116; overflow: hidden; border-radius: 36px; background: #0C0C0C; }
 .telefono__captura { width: 100%; height: 100%; object-fit: cover; }
 .mapa { position: absolute; inset: 0; width: 100%; height: 100%; }
 .mapa__tierra { fill: #0C0C0C; }
@@ -331,7 +326,7 @@ h1, h2, h3 { line-height: 1.12; letter-spacing: -.02em; }
 .captura { flex: 0 0 auto; width: min(240px, 66vw); margin: 0; scroll-snap-align: start; }
 .captura__marco {
   position: relative; overflow: hidden;
-  aspect-ratio: 9 / 19.5; border-radius: 30px;
+  aspect-ratio: 1080 / 2116; border-radius: 30px;
   background: var(--superficie); border: 6px solid var(--superficie);
   outline: 1px solid var(--borde);
   box-shadow: var(--sombra);

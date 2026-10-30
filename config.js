@@ -54,12 +54,13 @@ window.OMNIUY = {
   /* ---------- CAPTURAS ----------
      Subí tus imágenes a la carpeta img/capturas/ con estos nombres.
      Mientras no existan, se muestra un recuadro de reemplazo.        */
-  capturaPortada: "img/capturas/portada.png",   // La que va dentro del celular de arriba
+  capturaPortada: "img/capturas/portada.webp",  // La que va dentro del celular de arriba
   capturas: [
-    { archivo: "img/capturas/captura-1.png", titulo: "Ómnibus en vivo" },
-    { archivo: "img/capturas/captura-2.png", titulo: "Alerta de bajada" },
-    { archivo: "img/capturas/captura-3.png", titulo: "Ventana flotante" },
-    { archivo: "img/capturas/captura-4.png", titulo: "Tarjeta de viaje" },
+    { archivo: "img/capturas/captura-1.webp", titulo: "Elegí cómo ir" },
+    { archivo: "img/capturas/captura-2.webp", titulo: "Ómnibus en vivo" },
+    { archivo: "img/capturas/captura-3.webp", titulo: "Planificá tu viaje" },
+    { archivo: "img/capturas/captura-4.webp", titulo: "Todo el recorrido" },
+    { archivo: "img/capturas/captura-5.webp", titulo: "Todas las líneas" },
   ],
 
   /* ---------- TEXTOS DE LA PÁGINA ---------- */

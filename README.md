@@ -16,8 +16,11 @@ Sitio estático (HTML, CSS y JS) pensado para GitHub Pages.
 
 Subilas a `img/capturas/` con estos nombres (o cambiá los nombres en `config.js`):
 
-- `portada.png`: la que aparece dentro del celular, arriba de todo
-- `captura-1.png`, `captura-2.png`, `captura-3.png`, `captura-4.png`: el carrusel
+- `portada.webp`: la que aparece dentro del celular, arriba de todo
+- `captura-1.webp` a `captura-5.webp`: el carrusel
+
+Pueden ser .png o .jpg también: solo cambiá el nombre en `config.js`.
+Cuidá que no aparezcan datos personales (tu ubicación, Casa, Trabajo).
 
 Mientras no existan, la web muestra un recuadro de reemplazo.
 
