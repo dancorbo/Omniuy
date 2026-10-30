@@ -177,11 +177,14 @@
     });
 
     // Contacto
-    var email = C.contacto && C.contacto.email;
-    if (email) {
-      $$('[data-email]').forEach(function (a) { a.href = 'mailto:' + email; });
-      $$('[data-email-texto]').forEach(function (el) { el.textContent = email; });
-    }
+    var emails = (C.contacto && C.contacto.emails) || [];
+    $$('[data-emails]').forEach(function (lista) {
+      lista.innerHTML = emails.map(function (e) {
+        return '<li><span class="pie__para">' + esc(e.para) + '</span>' +
+          '<a class="pie__email" href="mailto:' + esc(e.email) + '">' +
+          icono('correo') + '<span>' + esc(e.email) + '</span></a></li>';
+      }).join('');
+    });
 
     // Créditos del pie
     var creditos = T.pie && T.pie.creditos;

@@ -440,9 +440,11 @@ h1, h2, h3 { line-height: 1.12; letter-spacing: -.02em; }
 @media (min-width: 760px) { .pie__in { grid-template-columns: 1fr 1fr; } .pie__legal { grid-column: 1 / -1; } }
 .pie__frase { margin: 12px 0 0; }
 .pie__titulo { margin: 0 0 10px; color: var(--claro); font-size: 1rem; }
+.pie__emails { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+.pie__para { display: block; font-size: .8rem; color: rgba(255, 255, 255, .55); }
+.pie__email svg { width: 20px; height: 20px; flex: none; color: var(--acento); }
 .pie__email { display: inline-flex; align-items: center; gap: 10px; color: var(--claro); font-weight: 600; text-decoration: none; word-break: break-all; }
 .pie__email:hover { text-decoration: underline; }
-.pie__email [data-icono] { color: var(--acento); }
 .pie__legal { padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, .1); font-size: .82rem; color: rgba(255, 255, 255, .5); }
 .pie__legal p { margin: 0 0 6px; }
 .pie__creditos { color: rgba(255, 255, 255, .72); font-size: .88rem; line-height: 1.7; }

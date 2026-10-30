@@ -1,7 +1,7 @@
 # Omniuy · Página web
 
 Landing de **Omniuy**, la app Android de ómnibus en vivo para Montevideo.
-Sitio estático (HTML, CSS y JS) publicado en Vercel: https://omniuy225.vercel.app
+Sitio estático (HTML, CSS y JS) publicado en Vercel: https://omniuy.app
 
 Cada cambio que llega a `main` se publica solo.
 
