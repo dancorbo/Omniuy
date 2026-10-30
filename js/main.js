@@ -160,6 +160,18 @@
       $$('[data-email-texto]').forEach(function (el) { el.textContent = email; });
     }
 
+    // Créditos del pie
+    var creditos = T.pie && T.pie.creditos;
+    if (Array.isArray(creditos)) {
+      $$('[data-creditos]').forEach(function (el) {
+        el.innerHTML = creditos.map(function (c) {
+          return c.enlace
+            ? '<a href="' + esc(c.enlace) + '" target="_blank" rel="noopener">' + esc(c.texto) + '</a>'
+            : esc(c.texto);
+        }).join(' · ');
+      });
+    }
+
     // Funciones
     pintarLista('lista-funciones', T.funciones && T.funciones.items, function (f, i) {
       return '<article class="tarjeta revelar" style="--retardo:' + (i % 3) * 90 + 'ms">' +

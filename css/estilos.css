@@ -435,6 +435,9 @@ h1, h2, h3 { line-height: 1.12; letter-spacing: -.02em; }
 .pie__email [data-icono] { color: var(--acento); }
 .pie__legal { padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, .1); font-size: .82rem; color: rgba(255, 255, 255, .5); }
 .pie__legal p { margin: 0 0 6px; }
+.pie__creditos { color: rgba(255, 255, 255, .72); font-size: .88rem; line-height: 1.7; }
+.pie__creditos a { color: inherit; text-decoration-color: rgba(255, 255, 255, .3); text-underline-offset: 3px; }
+.pie__creditos a:hover { color: var(--acento); }
 
 /* ---------- Aviso emergente (toast) ---------- */
 .toast {
