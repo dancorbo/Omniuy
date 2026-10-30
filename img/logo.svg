@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Logo PROVISORIO: reemplazalo por el logo real de Omniuy -->
+  <rect width="64" height="64" rx="16" fill="#FFC21A"/>
+  <g fill="none" stroke="#0B1B2B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="17" y="13" width="30" height="32" rx="6"/>
+    <path d="M17 30h30M24 45v6M40 45v6"/>
+  </g>
+  <circle cx="25" cy="38" r="2.5" fill="#0B1B2B"/>
+  <circle cx="39" cy="38" r="2.5" fill="#0B1B2B"/>
+</svg>

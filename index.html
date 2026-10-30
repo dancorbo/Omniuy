@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="es-UY">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Omniuy · Tu ómnibus en Montevideo, en vivo</title>
+  <meta name="description" content="Omniuy es una app Android para viajar en ómnibus en Montevideo: ómnibus en vivo, alerta para bajarte en tu parada y hora exacta de llegada.">
+  <meta name="theme-color" content="#0B1B2B">
+
+  <!-- Vista previa al compartir (WhatsApp, Facebook, etc.).
+       WhatsApp NO lee config.js: si cambiás estos textos, cambialos acá. -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_UY">
+  <meta property="og:site_name" content="Omniuy">
+  <meta property="og:title" content="Omniuy · Tu ómnibus en Montevideo, en vivo">
+  <meta property="og:description" content="Ómnibus en vivo, alerta para bajarte en tu parada y hora exacta de llegada. Descargala gratis para Android.">
+  <meta property="og:url" content="https://dancorbo.github.io/Omniuy/">
+  <meta property="og:image" content="https://dancorbo.github.io/Omniuy/img/og-imagen.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Omniuy, tu ómnibus en Montevideo en vivo">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/icono-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="img/icono-180.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <script src="config.js"></script>
+  <script>
+    /* Aplica los colores de config.js antes de mostrar la página */
+    (function () {
+      var raiz = document.documentElement;
+      raiz.classList.add('js');
+      var c = window.OMNIUY && window.OMNIUY.colores;
+      if (!c) return;
+      if (c.principal) raiz.style.setProperty('--principal', c.principal);
+      if (c.acento) raiz.style.setProperty('--acento', c.acento);
+      if (c.sobreAcento) raiz.style.setProperty('--sobre-acento', c.sobreAcento);
+    })();
+  </script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- ================= BARRA SUPERIOR ================= -->
+  <header class="barra" id="barra">
+    <div class="contenedor barra__in">
+      <a class="marca" href="#inicio" aria-label="Omniuy, inicio">
+        <img data-logo src="img/logo.svg" alt="" width="34" height="34">
+        <span>Omniuy</span>
+      </a>
+      <a class="btn btn--acento btn--chico" data-apk href="#descargar">
+        <span data-icono="descargar"></span>Descargar
+      </a>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ================= PORTADA ================= -->
+    <section class="hero" id="inicio">
+      <div class="contenedor hero__in">
+        <div class="hero__texto">
+          <span class="chip revelar" data-version>Pre-alfa 0.3.0</span>
+          <h1 class="revelar" style="--retardo:80ms">
+            <span data-t="hero.titulo">Tu ómnibus en Montevideo,</span>
+            <em data-t="hero.tituloDestacado">en vivo.</em>
+          </h1>
+          <p class="hero__sub revelar" style="--retardo:160ms" data-t="hero.subtitulo"></p>
+
+          <div class="descarga revelar" id="descargar" style="--retardo:240ms">
+            <a class="btn btn--acento btn--grande btn--pulso" data-apk href="#">
+              <span data-icono="descargar"></span>
+              <span class="btn__textos">
+                <strong data-t="hero.boton">Descargar APK</strong>
+                <small data-version-linea>v0.3.0</small>
+              </span>
+            </a>
+            <a class="btn btn--play" data-play href="#" role="button" aria-disabled="true">
+              <span data-icono="play"></span>
+              <span class="btn__textos">
+                <small>Próximamente en</small>
+                <strong>Google Play</strong>
+              </span>
+            </a>
+          </div>
+          <p class="hero__nota revelar" style="--retardo:320ms">
+            <span data-t="hero.nota"></span><span data-requisitos></span> ·
+            <a href="#instalar" data-t="hero.enlaceAyuda">¿Cómo se instala?</a>
+          </p>
+        </div>
+
+        <div class="hero__visual revelar" style="--retardo:200ms">
+          <div class="telefono">
+            <div class="telefono__pantalla">
+              <img class="telefono__captura" data-captura-portada alt="Captura de Omniuy" hidden>
+              <!-- Ilustración que se muestra mientras no haya captura de portada -->
+              <svg class="mapa" data-mapa viewBox="0 0 260 540" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <rect class="mapa__tierra" width="260" height="540"/>
+                <rect class="mapa__parque" x="128" y="186" width="46" height="48" rx="8"/>
+                <rect class="mapa__parque" x="44" y="100" width="50" height="54" rx="8"/>
+                <g class="mapa__calles">
+                  <path d="M0 90H260M0 170H260M0 250H260M0 330H260M0 410H260"/>
+                  <path d="M30 0V540M110 0V540M190 0V540M250 0V540"/>
+                  <path class="mapa__avenida" d="M0 470L260 300"/>
+                </g>
+                <path class="mapa__agua" d="M0 488C70 470 150 482 260 520V540H0Z"/>
+                <path class="mapa__caminata" d="M30 450V410M190 90H236V48"/>
+                <path class="mapa__ruta" id="ruta" d="M30 410H110V330H190V250H110V170H190V90"/>
+                <g class="mapa__paradas">
+                  <circle cx="30" cy="410" r="6"/><circle cx="110" cy="410" r="5"/>
+                  <circle cx="110" cy="330" r="5"/><circle cx="190" cy="330" r="5"/>
+                  <circle cx="190" cy="250" r="5"/><circle cx="110" cy="250" r="5"/>
+                  <circle cx="110" cy="170" r="5"/><circle cx="190" cy="170" r="5"/>
+                  <circle cx="190" cy="90" r="6"/>
+                </g>
+                <circle class="mapa__yo" cx="30" cy="450" r="7"/>
+                <g class="mapa__destino" transform="translate(236 48)">
+                  <path d="M0 0C-9-12-12-17-12-23A12 12 0 0 1 12-23C12-17 9-12 0 0Z"/>
+                  <circle cy="-23" r="4.5"/>
+                </g>
+                <g class="mapa__bus">
+                  <circle r="15"/>
+                  <path d="M-6-7h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2zM-8-1h16"/>
+                  <animateMotion dur="11s" repeatCount="indefinite" rotate="0">
+                    <mpath href="#ruta"/>
+                  </animateMotion>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="aviso-flotante" aria-hidden="true">
+            <span class="aviso-flotante__icono" data-icono="campana"></span>
+            <span>
+              <strong data-t="hero.avisoTarjeta">Bajás en 2 paradas</strong>
+              <small data-t="hero.avisoTarjetaDetalle">Llegás a destino 18:42</small>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FUNCIONES ================= -->
+    <section class="seccion" id="funciones">
+      <div class="contenedor">
+        <header class="seccion__cabeza revelar">
+          <span class="antetitulo" data-t="funciones.antetitulo"></span>
+          <h2 data-t="funciones.titulo"></h2>
+          <p class="seccion__intro" data-t="funciones.intro"></p>
+        </header>
+        <div class="grid grid--funciones" id="lista-funciones"></div>
+      </div>
+    </section>
+
+    <!-- ================= UN VIAJE ================= -->
+    <section class="seccion seccion--oscura" id="viaje">
+      <div class="contenedor viaje__in">
+        <header class="seccion__cabeza revelar">
+          <span class="antetitulo" data-t="viaje.antetitulo"></span>
+          <h2 data-t="viaje.titulo"></h2>
+          <p class="seccion__intro" data-t="viaje.intro"></p>
+        </header>
+        <ol class="linea" id="lista-viaje">
+          <li class="linea__progreso" aria-hidden="true"></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= CAPTURAS ================= -->
+    <section class="seccion" id="capturas">
+      <div class="contenedor">
+        <header class="seccion__cabeza revelar">
+          <span class="antetitulo" data-t="capturas.antetitulo"></span>
+          <h2 data-t="capturas.titulo"></h2>
+          <p class="seccion__intro" data-t="capturas.intro"></p>
+        </header>
+        <div class="carrusel" id="lista-capturas" tabindex="0" aria-label="Capturas de pantalla"></div>
+      </div>
+    </section>
+
+    <!-- ================= INSTALAR ================= -->
+    <section class="seccion seccion--alterna" id="instalar">
+      <div class="contenedor">
+        <header class="seccion__cabeza revelar">
+          <span class="antetitulo" data-t="instalar.antetitulo"></span>
+          <h2 data-t="instalar.titulo"></h2>
+          <p class="seccion__intro" data-t="instalar.intro"></p>
+        </header>
+        <ol class="grid grid--pasos" id="lista-pasos"></ol>
+        <div class="aviso revelar">
+          <span data-icono="escudo"></span>
+          <p data-t="instalar.aviso"></p>
+        </div>
+        <div class="centrado revelar">
+          <a class="btn btn--acento btn--grande" data-apk href="#">
+            <span data-icono="descargar"></span>
+            <span class="btn__textos">
+              <strong data-t="hero.boton">Descargar APK</strong>
+              <small data-version-linea>v0.3.0</small>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PREMIUM ================= -->
+    <section class="seccion" id="premium">
+      <div class="contenedor">
+        <div class="premium revelar">
+          <header class="seccion__cabeza">
+            <span class="etiqueta" data-t="premium.antetitulo"></span>
+            <h2 data-t="premium.titulo"></h2>
+            <p class="seccion__intro" data-t="premium.intro"></p>
+          </header>
+          <div class="grid grid--premium" id="lista-premium"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PREGUNTAS FRECUENTES ================= -->
+    <section class="seccion seccion--alterna" id="preguntas">
+      <div class="contenedor contenedor--angosto">
+        <header class="seccion__cabeza revelar">
+          <span class="antetitulo" data-t="faq.antetitulo"></span>
+          <h2 data-t="faq.titulo"></h2>
+        </header>
+        <div class="faq" id="lista-faq"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= PIE ================= -->
+  <footer class="pie">
+    <div class="contenedor pie__in">
+      <div>
+        <a class="marca" href="#inicio">
+          <img data-logo src="img/logo.svg" alt="" width="34" height="34">
+          <span>Omniuy</span>
+        </a>
+        <p class="pie__frase" data-t="pie.frase"></p>
+      </div>
+      <div>
+        <h3 class="pie__titulo">Contacto</h3>
+        <a class="pie__email" data-email href="#">
+          <span data-icono="correo"></span><span data-email-texto></span>
+        </a>
+      </div>
+      <div class="pie__legal">
+        <p data-t="pie.datos"></p>
+        <p data-t="pie.aviso"></p>
+        <p>© <span data-anio>2026</span> Omniuy · <span data-version>Pre-alfa 0.3.0</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
