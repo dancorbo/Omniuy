@@ -53,3 +53,10 @@ js/main.js        Armado de secciones y animaciones
 img/              Logo, favicon, imagen para compartir y capturas
 .nojekyll         Solo se usa si algún día se publica en GitHub Pages
 ```
+
+## Servidor intermedio (tiempo real)
+
+`api/buses.js` es una función de Vercel: la app le pregunta a `https://omniuy.app/api/buses?lines=100`
+(o `?busstopId=1234`) y ella le pregunta a la Intendencia con las claves, que están SOLO en Vercel
+(Settings › Environment Variables: `STM_CLIENT_ID` y `STM_CLIENT_SECRET`). Así el APK no lleva claves.
+Cada respuesta se guarda 10 s, así muchas personas mirando la misma línea son una sola consulta.
