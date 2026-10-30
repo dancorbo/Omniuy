@@ -151,7 +151,14 @@ window.OMNIUY = {
 
     pie: {
       frase: "Hecho en Montevideo, para moverse por Montevideo.",
-      datos: "Datos: Sistema de Transporte Metropolitano (STM), datos abiertos de la Intendencia de Montevideo.",
+      // Créditos: se muestran separados por « · ». El «enlace» es opcional.
+      creditos: [
+        { texto: "Desarrollado por Daniel Corbo" },
+        { texto: "Hecho con Claude Code", enlace: "https://claude.com/claude-code" },
+        { texto: "Datos abiertos del STM / Intendencia de Montevideo", enlace: "https://ckan.montevideo.gub.uy/" },
+        { texto: "Mapas de las capturas: MapLibre · OpenFreeMap © OpenMapTiles · Datos de OpenStreetMap", enlace: "https://www.openstreetmap.org/copyright" },
+        { texto: "Letra Plus Jakarta Sans (OFL)" },
+      ],
       aviso: "Omniuy es un proyecto independiente. No está afiliado a la Intendencia de Montevideo ni al STM.",
     },
   },
