@@ -91,6 +91,7 @@ module.exports = async function (req, res) {
     return res.status(200).json(Array.isArray(buses) ? buses.map(resumir) : []);
   } catch (e) {
     res.setHeader('Cache-Control', 'no-store');
-    return res.status(502).json({ error: 'La Intendencia no respondió' });
+    // El detalle dice en qué paso falló (sin datos secretos): "token HTTP 401", "TimeoutError"...
+    return res.status(502).json({ error: 'La Intendencia no respondió', detalle: (e && (e.name + ': ' + e.message)) || '' });
   }
 };
