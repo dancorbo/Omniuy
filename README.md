@@ -1,7 +1,9 @@
 # Omniuy · Página web
 
 Landing de **Omniuy**, la app Android de ómnibus en vivo para Montevideo.
-Sitio estático (HTML, CSS y JS) pensado para GitHub Pages.
+Sitio estático (HTML, CSS y JS) publicado en Vercel: https://omniuy225.vercel.app
+
+Cada cambio que llega a `main` se publica solo.
 
 ## Qué archivo tocar
 
@@ -49,5 +51,5 @@ config.js         Textos y datos
 css/estilos.css   Diseño
 js/main.js        Armado de secciones y animaciones
 img/              Logo, favicon, imagen para compartir y capturas
-.nojekyll         Le dice a GitHub Pages que publique los archivos tal cual
+.nojekyll         Solo se usa si algún día se publica en GitHub Pages
 ```
