@@ -51,7 +51,12 @@ window.OMNIUY = {
 
   /* ---------- CONTACTO ---------- */
   contacto: {
-    email: "dancorbo225@gmail.com",
+    // Correos que aparecen en el pie. «para» es el texto que va arriba de cada uno.
+    emails: [
+      { para: "Consultas generales", email: "contacto@omniuy.app" },
+      { para: "Ayuda y errores de la app", email: "soporte@omniuy.app" },
+      { para: "Propuestas, prensa y alianzas", email: "propuestas@omniuy.app" },
+    ],
   },
 
   /* ---------- CAPTURAS ----------
@@ -148,7 +153,7 @@ window.OMNIUY = {
         { pregunta: "¿Funciona fuera de Montevideo?", respuesta: "Por ahora no. Omniuy usa los datos abiertos del STM, el Sistema de Transporte Metropolitano de Montevideo, así que funciona con sus líneas y paradas." },
         { pregunta: "¿Cuándo sale en Google Play?", respuesta: "La app está en pre-alfa y la estamos probando con un grupo chico. Cuando esté estable la vamos a publicar en Google Play. Mientras tanto, podés usar el APK de esta página." },
         { pregunta: "¿Hay versión para iPhone?", respuesta: "Por ahora no: Omniuy es solo para Android." },
-        { pregunta: "Encontré un error o tengo una idea, ¿a quién le aviso?", respuesta: "¡Nos encanta! Escribinos al correo que está al pie de la página. Al ser una pre-alfa, cada comentario ayuda muchísimo." },
+        { pregunta: "Encontré un error o tengo una idea, ¿a quién le aviso?", respuesta: "¡Nos encanta! Escribinos a soporte@omniuy.app. Al ser una pre-alfa, cada comentario ayuda muchísimo." },
       ],
     },
 
