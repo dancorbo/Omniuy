@@ -41,9 +41,9 @@ window.OMNIUY = {
   /* ---------- MARCA ---------- */
   logo: "img/logo.svg",           // Ruta del logo (cuadrado)
   colores: {
-    principal: "#0B1B2B",         // Fondo oscuro de la portada y el pie
-    acento: "#FFC21A",            // Color de los botones y destacados
-    sobreAcento: "#1B1400",       // Color del texto encima del color de acento
+    principal: "#0A0A0A",         // Fondo oscuro de la portada y el pie
+    acento: "#75CE8C",            // Verde Omniuy: botones y destacados
+    sobreAcento: "#0A0A0A",       // Color del texto encima del verde
   },
 
   /* ---------- CONTACTO ---------- */
@@ -72,8 +72,9 @@ window.OMNIUY = {
       boton: "Descargar APK",
       nota: "Gratis · Solo Android",
       enlaceAyuda: "¿Cómo se instala?",
-      avisoTarjeta: "Bajás en 2 paradas",
-      avisoTarjetaDetalle: "Llegás a destino 18:42",
+      // Notificación de ejemplo que flota junto al celular
+      notificacionTitulo: "103 · llega en 20 min",
+      notificacionTexto: "faltan 39 paradas · llegás ≈ 4:58",
     },
 
     funciones: {

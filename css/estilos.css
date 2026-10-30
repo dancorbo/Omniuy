@@ -5,19 +5,21 @@
 
 /* ---------- Colores y medidas ---------- */
 :root {
-  --principal: #0B1B2B;
-  --acento: #FFC21A;
-  --sobre-acento: #1B1400;
+  --principal: #0A0A0A;
+  --acento: #75CE8C;
+  --sobre-acento: #0A0A0A;
+  --azul: #3059B1;
+  --rojo: #B73831;
 
-  --fondo: #F5F7FB;
-  --fondo-alterno: #ECF0F6;
+  --fondo: #F6F7F6;
+  --fondo-alterno: #EDF0EE;
   --superficie: #FFFFFF;
-  --texto: #0E1726;
-  --suave: #56627A;
-  --borde: rgba(14, 23, 38, .10);
-  --icono: var(--principal);
-  --icono-fondo: color-mix(in srgb, var(--acento) 22%, transparent);
-  --sombra: 0 12px 32px -16px rgba(14, 23, 38, .28);
+  --texto: #111312;
+  --suave: #5A625D;
+  --borde: rgba(17, 19, 18, .10);
+  --icono: #1F6B36;
+  --icono-fondo: color-mix(in srgb, var(--acento) 26%, transparent);
+  --sombra: 0 12px 32px -16px rgba(17, 19, 18, .28);
 
   --claro: #FFFFFF;
   --claro-suave: rgba(255, 255, 255, .72);
@@ -31,11 +33,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --fondo: #08111C;
-    --fondo-alterno: #0C1724;
-    --superficie: #111D2D;
-    --texto: #EAF0F8;
-    --suave: #9AA8BE;
+    --fondo: #0A0A0A;
+    --fondo-alterno: #111112;
+    --superficie: #18181A;
+    --texto: #EDEFEE;
+    --suave: #A1A8A4;
     --borde: rgba(255, 255, 255, .09);
     --icono: var(--acento);
     --icono-fondo: color-mix(in srgb, var(--acento) 14%, transparent);
@@ -44,11 +46,11 @@
   }
 }
 :root[data-theme="dark"] {
-  --fondo: #08111C;
-  --fondo-alterno: #0C1724;
-  --superficie: #111D2D;
-  --texto: #EAF0F8;
-  --suave: #9AA8BE;
+  --fondo: #0A0A0A;
+  --fondo-alterno: #111112;
+  --superficie: #18181A;
+  --texto: #EDEFEE;
+  --suave: #A1A8A4;
   --borde: rgba(255, 255, 255, .09);
   --icono: var(--acento);
   --icono-fondo: color-mix(in srgb, var(--acento) 14%, transparent);
@@ -151,8 +153,8 @@ h1, h2, h3 { line-height: 1.12; letter-spacing: -.02em; }
   color: var(--claro);
   background: var(--principal);
   background:
-    radial-gradient(60% 50% at 85% 20%, color-mix(in srgb, var(--acento) 22%, transparent), transparent 70%),
-    radial-gradient(70% 60% at 0% 100%, color-mix(in srgb, #3B82F6 22%, transparent), transparent 70%),
+    radial-gradient(60% 50% at 85% 20%, color-mix(in srgb, var(--acento) 18%, transparent), transparent 70%),
+    radial-gradient(70% 60% at 0% 100%, color-mix(in srgb, var(--azul) 30%, transparent), transparent 70%),
     var(--principal);
 }
 /* Cuadrícula de calles de fondo */
@@ -196,7 +198,7 @@ h1, h2, h3 { line-height: 1.12; letter-spacing: -.02em; }
   position: relative;
   width: min(290px, 74vw); aspect-ratio: 9 / 19;
   padding: 10px; border-radius: 46px;
-  background: linear-gradient(150deg, #2B3647, #0B1018);
+  background: linear-gradient(150deg, #34343A, #0B0B0C);
   box-shadow: 0 50px 90px -40px rgba(0, 0, 0, .8), inset 0 0 0 1.5px rgba(255, 255, 255, .14);
   animation: flotar 7s ease-in-out infinite;
 }
@@ -205,46 +207,58 @@ h1, h2, h3 { line-height: 1.12; letter-spacing: -.02em; }
   width: 22px; height: 22px; border-radius: 50%; transform: translateX(-50%);
   background: #05080C; box-shadow: inset 0 0 0 3px #111823;
 }
-.telefono__pantalla { position: relative; height: 100%; overflow: hidden; border-radius: 36px; background: #E8EDF3; }
+.telefono__pantalla { position: relative; height: 100%; overflow: hidden; border-radius: 36px; background: #0C0C0C; }
 .telefono__captura { width: 100%; height: 100%; object-fit: cover; }
 .mapa { position: absolute; inset: 0; width: 100%; height: 100%; }
-.mapa__tierra { fill: #E8EDF3; }
-.mapa__parque { fill: #CFE8C9; }
-.mapa__calles path { fill: none; stroke: #FFFFFF; stroke-width: 9; }
-.mapa__calles .mapa__avenida { stroke-width: 14; }
-.mapa__agua { fill: #B9D9F0; }
-.mapa__caminata { fill: none; stroke: #56627A; stroke-width: 3; stroke-dasharray: 2 6; stroke-linecap: round; }
-.mapa__ruta { fill: none; stroke: var(--principal); stroke-width: 7; stroke-linejoin: round; stroke-linecap: round; }
-.mapa__paradas circle { fill: #FFFFFF; stroke: var(--principal); stroke-width: 3; }
-.mapa__yo { fill: #3B82F6; stroke: #FFFFFF; stroke-width: 3; }
-.mapa__destino path { fill: #E5484D; }
-.mapa__destino circle { fill: #FFFFFF; }
-.mapa__bus circle { fill: var(--acento); stroke: var(--principal); stroke-width: 3; }
-.mapa__bus path { fill: none; stroke: var(--principal); stroke-width: 2; stroke-linecap: round; }
+.mapa__tierra { fill: #0C0C0C; }
+.mapa__calles path { fill: none; stroke: #242426; stroke-width: 4; }
+.mapa__calles .mapa__avenida { stroke: #2E2E31; stroke-width: 7; }
+.mapa__agua { fill: #050505; stroke: #2A2A2D; stroke-width: 2; }
+.mapa__caminata { fill: none; stroke: var(--acento); stroke-width: 3; stroke-dasharray: 1 6; stroke-linecap: round; }
+.mapa__ruta { fill: none; stroke: var(--azul); stroke-width: 6; stroke-linejoin: round; stroke-linecap: round; }
+.mapa__subida { fill: var(--acento); stroke: #FFFFFF; stroke-width: 2.5; }
+.mapa__bajada { fill: var(--rojo); stroke: #FFFFFF; stroke-width: 2.5; }
+.mapa__yo { fill: #5B8DEF; stroke: #FFFFFF; stroke-width: 3; }
+.mapa__destino { fill: #E07B2E; stroke: #FFFFFF; stroke-width: 2.5; }
+.mapa__bus circle { fill: var(--azul); stroke: #FFFFFF; stroke-width: 3; }
+.mapa__bus path { fill: none; stroke: #FFFFFF; stroke-width: 2; stroke-linecap: round; }
 
 .aviso-flotante {
-  position: absolute; left: 0; top: 18%;
-  display: flex; align-items: center; gap: 12px;
-  padding: 12px 16px 12px 12px; border-radius: 18px;
-  background: rgba(255, 255, 255, .96); color: #0E1726;
-  box-shadow: 0 20px 40px -18px rgba(0, 0, 0, .55);
+  position: absolute; left: 0; top: 16%;
+  display: flex; align-items: flex-start; gap: 12px;
+  width: min(300px, 86vw);
+  padding: 14px 16px 14px 14px; border-radius: 22px;
+  background: rgba(32, 32, 34, .96); color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, .08);
+  box-shadow: 0 24px 48px -18px rgba(0, 0, 0, .8);
   animation: vibrar 4s ease-in-out infinite;
 }
-.aviso-flotante strong { display: block; font-size: .95rem; line-height: 1.2; }
-.aviso-flotante small { color: #56627A; font-size: .8rem; font-weight: 600; }
-.aviso-flotante__icono {
-  width: 40px; height: 40px; flex: none; border-radius: 12px;
-  display: grid !important; place-items: center;
-  background: var(--acento); color: var(--sobre-acento);
+.aviso-flotante__icono { width: 40px; height: 40px; flex: none; border-radius: 12px; }
+.aviso-flotante__textos { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; }
+.aviso-flotante strong { font-size: .9rem; line-height: 1.25; }
+.aviso-flotante em { font-style: normal; color: var(--acento); font-weight: 700; white-space: nowrap; }
+.aviso-flotante small { color: rgba(255, 255, 255, .7); font-size: .78rem; font-weight: 600; }
+/* Barrita de progreso: caminata · viaje en ómnibus · caminata */
+.aviso-flotante__barra { display: flex; align-items: center; gap: 4px; margin-top: 8px; }
+.aviso-flotante__barra i { width: 18px; height: 4px; border-radius: 4px; background: #6B6B6F; }
+.aviso-flotante__barra b { position: relative; flex: 1; height: 4px; border-radius: 4px; background: var(--azul); }
+.aviso-flotante__barra b::before, .aviso-flotante__barra b::after {
+  content: ""; position: absolute; top: 50%; width: 9px; height: 9px; border-radius: 2px; transform: translateY(-50%);
 }
-.aviso-flotante__icono svg { width: 22px; height: 22px; }
+.aviso-flotante__barra b::before { left: -2px; background: var(--acento); }
+.aviso-flotante__barra b::after { right: -2px; background: var(--rojo); }
 @media (min-width: 900px) { .aviso-flotante { left: -12px; } }
 
 /* ---------- Secciones ---------- */
 .seccion { padding: 80px 0; }
 @media (min-width: 900px) { .seccion { padding: 112px 0; } }
 .seccion--alterna { background: var(--fondo-alterno); }
-.seccion--oscura { background: var(--principal); color: var(--claro); }
+.seccion--oscura {
+  color: var(--claro);
+  background: var(--principal);
+  background: radial-gradient(80% 60% at 100% 0%, color-mix(in srgb, var(--acento) 10%, transparent), transparent 70%), var(--principal);
+  border-block: 1px solid rgba(255, 255, 255, .06);
+}
 .seccion__cabeza { max-width: 40rem; margin-bottom: 40px; }
 .seccion__cabeza h2 { margin: 12px 0 10px; font-size: clamp(1.9rem, 6.5vw, 2.8rem); font-weight: 800; }
 .seccion__intro { margin: 0; font-size: 1.08rem; color: var(--suave); }

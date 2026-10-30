@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Omniuy · Tu ómnibus en Montevideo, en vivo</title>
   <meta name="description" content="Omniuy es una app Android para viajar en ómnibus en Montevideo: ómnibus en vivo, alerta para bajarte en tu parada y hora exacta de llegada.">
-  <meta name="theme-color" content="#0B1B2B">
+  <meta name="theme-color" content="#0A0A0A">
 
   <!-- Vista previa al compartir (WhatsApp, Facebook, etc.).
        WhatsApp NO lee config.js: si cambiás estos textos, cambialos acá. -->
@@ -103,28 +103,18 @@
               <!-- Ilustración que se muestra mientras no haya captura de portada -->
               <svg class="mapa" data-mapa viewBox="0 0 260 540" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
                 <rect class="mapa__tierra" width="260" height="540"/>
-                <rect class="mapa__parque" x="128" y="186" width="46" height="48" rx="8"/>
-                <rect class="mapa__parque" x="44" y="100" width="50" height="54" rx="8"/>
                 <g class="mapa__calles">
-                  <path d="M0 90H260M0 170H260M0 250H260M0 330H260M0 410H260"/>
-                  <path d="M30 0V540M110 0V540M190 0V540M250 0V540"/>
-                  <path class="mapa__avenida" d="M0 470L260 300"/>
+                  <path d="M0 120L260 40M0 230L260 150M0 350L260 250M-20 470L260 380"/>
+                  <path d="M40 0L90 540M150 0L130 540M230 0L250 540"/>
+                  <path class="mapa__avenida" d="M0 300C80 280 120 200 260 190"/>
                 </g>
-                <path class="mapa__agua" d="M0 488C70 470 150 482 260 520V540H0Z"/>
-                <path class="mapa__caminata" d="M30 450V410M190 90H236V48"/>
-                <path class="mapa__ruta" id="ruta" d="M30 410H110V330H190V250H110V170H190V90"/>
-                <g class="mapa__paradas">
-                  <circle cx="30" cy="410" r="6"/><circle cx="110" cy="410" r="5"/>
-                  <circle cx="110" cy="330" r="5"/><circle cx="190" cy="330" r="5"/>
-                  <circle cx="190" cy="250" r="5"/><circle cx="110" cy="250" r="5"/>
-                  <circle cx="110" cy="170" r="5"/><circle cx="190" cy="170" r="5"/>
-                  <circle cx="190" cy="90" r="6"/>
-                </g>
-                <circle class="mapa__yo" cx="30" cy="450" r="7"/>
-                <g class="mapa__destino" transform="translate(236 48)">
-                  <path d="M0 0C-9-12-12-17-12-23A12 12 0 0 1 12-23C12-17 9-12 0 0Z"/>
-                  <circle cy="-23" r="4.5"/>
-                </g>
+                <path class="mapa__agua" d="M0 455C40 440 70 470 110 462S170 480 200 500 250 505 260 520V540H0Z"/>
+                <path class="mapa__ruta" id="ruta" d="M60 430L120 395L140 330L150 260L190 215L200 160L222 120"/>
+                <path class="mapa__caminata" d="M40 452L60 430M222 120L236 92"/>
+                <circle class="mapa__subida" cx="60" cy="430" r="7"/>
+                <circle class="mapa__bajada" cx="222" cy="120" r="7"/>
+                <circle class="mapa__yo" cx="40" cy="452" r="6"/>
+                <circle class="mapa__destino" cx="236" cy="92" r="8"/>
                 <g class="mapa__bus">
                   <circle r="15"/>
                   <path d="M-6-7h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2zM-8-1h16"/>
@@ -135,11 +125,13 @@
               </svg>
             </div>
           </div>
+          <!-- Notificación de ejemplo, con el estilo de la de la app -->
           <div class="aviso-flotante" aria-hidden="true">
-            <span class="aviso-flotante__icono" data-icono="campana"></span>
-            <span>
-              <strong data-t="hero.avisoTarjeta">Bajás en 2 paradas</strong>
-              <small data-t="hero.avisoTarjetaDetalle">Llegás a destino 18:42</small>
+            <img class="aviso-flotante__icono" data-logo src="img/logo.svg" alt="" width="40" height="40">
+            <span class="aviso-flotante__textos">
+              <strong><span data-t="hero.notificacionTitulo">103 · llega en 20 min</span> <em>● en vivo</em></strong>
+              <small data-t="hero.notificacionTexto">faltan 39 paradas · llegás ≈ 4:58</small>
+              <span class="aviso-flotante__barra"><i></i><b></b><i></i></span>
             </span>
           </div>
         </div>
