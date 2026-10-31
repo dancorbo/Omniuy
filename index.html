@@ -22,6 +22,10 @@
   <meta property="og:image:alt" content="Omniuy, tu ómnibus en Montevideo en vivo">
   <meta name="twitter:card" content="summary_large_image">
 
+  <!-- Ícono de la pestaña: .ico para las computadoras (algunos navegadores lo piden siempre en /favicon.ico),
+       32×32 en PNG y SVG para los que lo entienden -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="img/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="img/icono-192.png" type="image/png" sizes="192x192">
   <link rel="apple-touch-icon" href="img/icono-180.png">
@@ -223,12 +227,27 @@
             <p class="seccion__intro" data-t="premium.intro"></p>
           </header>
           <div class="grid grid--premium" id="lista-premium"></div>
+          <!-- Tarifas (config.js › premium.precios) -->
+          <div class="precios" id="lista-precios"></div>
+          <p class="precios__nota" data-t="premium.notaPrecios"></p>
         </div>
       </div>
     </section>
 
+    <!-- ================= LO NUEVO ================= -->
+    <section class="seccion seccion--alterna" id="novedades">
+      <div class="contenedor">
+        <header class="seccion__cabeza revelar">
+          <span class="antetitulo" data-t="novedades.antetitulo"></span>
+          <h2 data-t="novedades.titulo"></h2>
+          <p class="seccion__intro" data-t="novedades.intro"></p>
+        </header>
+        <div class="grid grid--funciones" id="lista-novedades"></div>
+      </div>
+    </section>
+
     <!-- ================= PREGUNTAS FRECUENTES ================= -->
-    <section class="seccion seccion--alterna" id="preguntas">
+    <section class="seccion" id="preguntas">
       <div class="contenedor contenedor--angosto">
         <header class="seccion__cabeza revelar">
           <span class="antetitulo" data-t="faq.antetitulo"></span>

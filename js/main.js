@@ -252,6 +252,22 @@
         '<div><h3>' + esc(b.titulo) + '</h3><p>' + esc(b.texto) + '</p></div></div>';
     });
 
+    // Tarifas de Premium
+    pintarLista('lista-precios', T.premium && T.premium.precios, function (p) {
+      return '<div class="precio">' +
+        (p.etiqueta ? '<span class="precio__etiqueta">' + esc(p.etiqueta) + '</span>' : '') +
+        '<span class="precio__nombre">' + esc(p.nombre) + '</span>' +
+        '<strong class="precio__valor">' + esc(p.precio) + '</strong>' +
+        '<span class="precio__cada">' + esc(p.cada) + '</span></div>';
+    });
+
+    // Lo nuevo
+    pintarLista('lista-novedades', T.novedades && T.novedades.items, function (f, i) {
+      return '<article class="tarjeta revelar" style="--retardo:' + (i % 3) * 90 + 'ms">' +
+        '<div class="icono">' + icono(f.icono) + '</div>' +
+        '<h3>' + esc(f.titulo) + '</h3><p>' + esc(f.texto) + '</p></article>';
+    });
+
     // Preguntas frecuentes
     pintarLista('lista-faq', T.faq && T.faq.preguntas, function (p) {
       return '<details class="revelar"><summary>' + esc(p.pregunta) +
