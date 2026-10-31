@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es-UY">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Política de privacidad · Omniuy</title>
+  <meta name="description" content="Qué datos usa Omniuy, para qué, dónde quedan guardados y cómo borrarlos.">
+  <link rel="canonical" href="https://omniuy.app/privacidad/">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/img/icono-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/estilos.css">
+  <style>
+    /* La barra de arriba va sobre fondo claro: acá lleva el fondo oscuro (si no, "Omniuy" queda blanco sobre blanco) */
+    .barra { background: var(--principal, #0A0A0A); }
+    .legal { padding: 120px 0 72px; }
+    .legal h1 { font-size: clamp(2rem, 5vw, 2.8rem); margin: 8px 0 6px; }
+    .legal h2 { font-size: 1.3rem; margin: 40px 0 10px; }
+    .legal p, .legal li { color: var(--suave); line-height: 1.65; }
+    .legal ul { padding-left: 1.2em; }
+    .legal li { margin: 6px 0; }
+    .legal strong { color: var(--texto, inherit); }
+    .legal .resumen {
+      margin: 28px 0 8px; padding: 20px 22px; border-radius: 20px;
+      background: var(--superficie); border: 1px solid var(--borde);
+    }
+    .legal .resumen p { margin: 0; }
+    .legal .fecha { color: var(--suave); font-size: .95rem; }
+  </style>
+</head>
+<body>
+  <header class="barra">
+    <div class="contenedor barra__in">
+      <a class="marca" href="/" aria-label="Omniuy, inicio">
+        <img src="/img/logo.svg" alt="" width="34" height="34">
+        <span>Omniuy</span>
+      </a>
+      <a class="btn btn--acento btn--chico" href="/">Volver al inicio</a>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="contenedor contenedor--angosto">
+      <span class="antetitulo">Privacidad</span>
+      <h1>Política de privacidad</h1>
+      <p class="fecha">Última actualización: 31 de octubre de 2026</p>
+
+      <div class="resumen">
+        <p><strong>En pocas palabras:</strong> Omniuy no tiene cuentas, no muestra anuncios, no usa estadísticas ni
+          rastreo y no vende datos. Lo que guardás (favoritos, viajes recientes, el saldo de tu tarjeta STM) queda
+          <strong>solo en tu celular</strong>. Tu ubicación se usa en el celular para el mapa y el viaje, y
+          <strong>no se envía a Omniuy</strong>.</p>
+      </div>
+
+      <h2>1. Quién es responsable</h2>
+      <p>Omniuy es una app independiente desarrollada por Daniel Corbo, en Montevideo, Uruguay. No está afiliada a la
+        Intendencia de Montevideo, al STM ni al Ministerio de Transporte. Por cualquier consulta sobre privacidad,
+        escribinos a <a href="mailto:soporte@omniuy.app">soporte@omniuy.app</a>.</p>
+
+      <h2>2. Tu ubicación</h2>
+      <ul>
+        <li><strong>Para qué:</strong> mostrarte en el mapa, abrir la parada más cercana, calcular cómo llegar y, durante
+          un viaje, seguirte para avisarte cuándo bajarte.</li>
+        <li><strong>En segundo plano:</strong> solo mientras hay un viaje que vos iniciaste. En ese momento Android
+          muestra una notificación fija; al terminar el viaje (o al tocar «Detener viaje») la app deja de usar tu
+          ubicación en segundo plano.</li>
+        <li><strong>Dónde queda:</strong> se procesa en tu celular. Omniuy no la envía a ningún servidor propio ni
+          guarda un historial de dónde estuviste. Para poder retomar un viaje si Android cierra la app, el viaje en
+          curso (no tu recorrido) se guarda en el celular y se borra al terminar.</li>
+        <li>Podés negar el permiso: la app funciona igual, pero sin tu punto en el mapa ni los avisos del viaje.</li>
+      </ul>
+
+      <h2>3. Lo que se guarda en tu celular</h2>
+      <p>Todo esto queda guardado <strong>solo en tu celular</strong>, dentro de la app:</p>
+      <ul>
+        <li>Lugares y paradas favoritas, viajes recientes y líneas buscadas.</li>
+        <li>Avisos de viajes planificados y el viaje en curso.</li>
+        <li>Tus ajustes: tema, ritmo de caminata, tipo de boleto.</li>
+        <li>Los datos de tus tarjetas STM que se ven en STM en línea (ver el punto 4).</li>
+      </ul>
+
+      <h2>4. Tu tarjeta STM (Omniuy Premium)</h2>
+      <ul>
+        <li>Para ver tu saldo, la app abre la <strong>página oficial STM en línea</strong> de la Intendencia dentro
+          de una ventana. Entrás con ID Uruguay (o con Abitab o Antel) en las páginas oficiales: <strong>Omniuy no ve
+          ni guarda tu usuario, tu cédula ni tu contraseña</strong>.</li>
+        <li>Cuando la página muestra tus tarjetas, Omniuy lee de la pantalla el <strong>número de tarjeta, su estado,
+          el saldo y los últimos movimientos</strong> (fecha, tipo, línea y monto), y los guarda en tu celular para
+          mostrártelos en la app y en el widget. No se envían a ningún lado.</li>
+        <li>Como en cualquier navegador, la sesión de STM en línea puede quedar abierta un tiempo en tu celular. La
+          podés cerrar desde el menú de esa misma página.</li>
+        <li>Podés olvidar una tarjeta (y sus movimientos) con la ✕ en la pantalla STM.</li>
+      </ul>
+
+      <h2>5. Con quién se conecta la app</h2>
+      <p>Para funcionar, la app se comunica con estos servicios. Como cualquier conexión a internet, ellos pueden ver
+        la dirección IP de tu conexión, según sus propias políticas:</p>
+      <ul>
+        <li><strong>Intendencia de Montevideo</strong> (tiempo real de los ómnibus): se envía el número de parada o
+          de línea que estás mirando, no tu ubicación.</li>
+        <li><strong>OpenFreeMap</strong> (el mapa, cuando hay internet): pide las partes del mapa que estás viendo.
+          Sin internet, la app usa el mapa de Montevideo que trae adentro.</li>
+        <li><strong>Buscador de direcciones de Android</strong> (de Google): cuando buscás una dirección con número
+          y hay internet, se envía el texto que escribiste. Los lugares con nombre, las esquinas y tus favoritos se
+          buscan dentro de la app, sin internet.</li>
+        <li><strong>STM en línea, ID Uruguay, Abitab y Antel</strong>: solo si abrís la pantalla STM; son las páginas
+          oficiales y tienen sus propias políticas.</li>
+      </ul>
+
+      <h2>6. Permisos que pide la app</h2>
+      <ul>
+        <li><strong>Ubicación</strong> (precisa o aproximada, y en segundo plano solo durante un viaje): ver el punto 2.</li>
+        <li><strong>Notificaciones y vibración</strong>: avisos del viaje, timbre para bajarte y avisos de viajes planificados.</li>
+        <li><strong>Usar la batería sin restricciones</strong> (opcional): para que Android no corte un viaje en curso.</li>
+        <li><strong>Iniciarse al encender el celular</strong>: solo para volver a programar tus avisos de viaje.</li>
+        <li><strong>Internet y estado de la red</strong>: tiempo real y mapas; sin conexión, la app avisa y usa los horarios.</li>
+      </ul>
+
+      <h2>7. Lo que Omniuy no hace</h2>
+      <ul>
+        <li>No tiene cuentas ni registro.</li>
+        <li>No muestra anuncios, en ninguna versión.</li>
+        <li>No usa herramientas de estadísticas, publicidad ni rastreo.</li>
+        <li>No vende, alquila ni comparte tus datos.</li>
+      </ul>
+
+      <h2>8. Omniuy Premium y pagos</h2>
+      <p>Cuando la suscripción esté disponible, el pago se va a hacer a través de Google Play. Google procesa el pago;
+        Omniuy no recibe los datos de tu tarjeta de crédito ni de tu medio de pago, solo la confirmación de que la
+        suscripción está activa.</p>
+
+      <h2>9. Cómo borrar tus datos</h2>
+      <ul>
+        <li><strong>De a uno:</strong> en la app podés borrar favoritos, viajes recientes, líneas buscadas, avisos y
+          tarjetas STM (con la ✕ o manteniendo apretado).</li>
+        <li><strong>Todo junto:</strong> en Android, Ajustes › Aplicaciones › Omniuy › Almacenamiento › Borrar datos.</li>
+        <li><strong>Desinstalar</strong> la app borra todo lo que guardó en tu celular.</li>
+      </ul>
+      <p>Como Omniuy no guarda tus datos en servidores propios, no hay nada más que borrar de nuestro lado.</p>
+
+      <h2>10. Esta página web</h2>
+      <p>La página omniuy.app está alojada en Vercel y usa la letra Plus Jakarta Sans de Google Fonts. Como en
+        cualquier sitio, esos servicios pueden registrar datos técnicos de la visita (como la dirección IP). La página
+        no usa cookies propias, estadísticas ni publicidad.</p>
+
+      <h2>11. Tus derechos</h2>
+      <p>De acuerdo con la Ley N.º 18.331 de Protección de Datos Personales de Uruguay, tenés derecho a acceder,
+        rectificar y suprimir tus datos. Como tus datos quedan en tu celular, los podés ver y borrar vos mismo (punto
+        9). Por cualquier consulta, escribinos a <a href="mailto:soporte@omniuy.app">soporte@omniuy.app</a>.</p>
+
+      <h2>12. Niñas, niños y adolescentes</h2>
+      <p>Omniuy no pide datos personales ni crea cuentas, así que no recopila datos de menores.</p>
+
+      <h2>13. Cambios en esta política</h2>
+      <p>Si cambia algo importante (por ejemplo, si la app empieza a consultar el tiempo real a través de un servidor
+        propio), lo vamos a actualizar acá, con la fecha de arriba.</p>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__in">
+      <div>
+        <a class="marca" href="/">
+          <img src="/img/logo.svg" alt="" width="34" height="34">
+          <span>Omniuy</span>
+        </a>
+      </div>
+      <div class="pie__legal">
+        <p>Omniuy es un proyecto independiente. No está afiliado a la Intendencia de Montevideo ni al STM.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
