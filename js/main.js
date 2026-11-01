@@ -29,6 +29,9 @@
     correo: '<rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5L12 13l8.5-6.5"/>',
     izquierda: '<path d="M15 18l-6-6 6-6"/>',
     derecha: '<path d="M9 18l6-6-6-6"/>',
+    ruta: '<circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/>',
+    sinred: '<path d="M2 8.5a15 15 0 0 1 6.2-3.4M12.9 4.6A15 15 0 0 1 22 8.5M5 12a10 10 0 0 1 4.2-2.3M19 12a10 10 0 0 0-2.5-1.6M8.5 15.5a5 5 0 0 1 5.6-.8"/><circle cx="12" cy="19" r=".8"/><path d="M3 3l18 18"/>',
+    estrella: '<path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/>',
     imagen: '<rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/>'
   };
 
@@ -136,6 +139,8 @@
         if (descarga.enlaceApk) a.href = descarga.enlaceApk;
         return;
       }
+      // Descargas en pausa: sin botones de APK ni explicación de cómo instalarlo (queda Google Play)
+      a.hidden = true;
       a.removeAttribute('href');
       a.setAttribute('role', 'button');
       a.setAttribute('tabindex', '0');
@@ -149,6 +154,10 @@
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); mostrarToast(avisoPausa); }
       });
     });
+
+    if (!descargaActiva) {
+      $$('[data-solo-apk]').forEach(function (el) { el.hidden = true; });
+    }
 
     var requisitos = C.descarga && C.descarga.requisitos;
     if (requisitos) $$('[data-requisitos]').forEach(function (el) { el.textContent = ' · ' + requisitos; });

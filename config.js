@@ -14,9 +14,9 @@ window.OMNIUY = {
 
   /* ---------- VERSIÓN DE LA APP ---------- */
   version: {
-    numero: "0.3.0",              // Número de versión
+    numero: "0.3.1",              // Número de versión
     etiqueta: "Pre-alfa",         // Aparece antes del número: «Pre-alfa 0.3.0»
-    fecha: "2026-10-30",          // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
+    fecha: "2026-10-31",          // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
     // Si está en true, la web lee sola la versión y la fecha del último
     // Release de GitHub. Si falla, usa los datos de arriba.
     leerDeGitHub: true,
@@ -38,7 +38,7 @@ window.OMNIUY = {
   googlePlay: {
     disponible: false,            // Cambialo a true cuando la app esté publicada
     enlace: "",                   // Link de la ficha en Play Store (cuando exista)
-    aviso: "¡Estamos en eso! Por ahora podés descargar el APK desde esta página.",
+    aviso: "¡Estamos en eso! Muy pronto vas a poder bajarla desde Google Play.",
   },
 
   /* ---------- MARCA ---------- */
@@ -91,13 +91,15 @@ window.OMNIUY = {
       titulo: "Todo lo que necesitás para moverte en ómnibus",
       intro: "Con los datos abiertos del STM, en tiempo real.",
       items: [
-        { icono: "vivo", titulo: "Ómnibus en vivo", texto: "Mirá dónde viene tu ómnibus en tiempo real, sobre su recorrido o en modo libre por todo el mapa." },
+        { icono: "ruta", titulo: "Cómo llegar", texto: "Elegí a dónde vas y te muestra las mejores opciones: caminata, ómnibus, trasbordos y a qué hora llegás." },
+        { icono: "vivo", titulo: "Ómnibus en vivo", texto: "Mirá en el mapa dónde viene tu ómnibus y en cuántos minutos llega a tu parada. También todos los de una línea, de punta a punta." },
         { icono: "campana", titulo: "Te avisa cuándo bajarte", texto: "Una parada antes de la tuya suena un timbre (también en tus auriculares) y vibra: «¡Bajate en la próxima!». Viajá tranquilo, mirando por la ventana." },
         { icono: "ventana", titulo: "Siempre a la vista", texto: "Seguí el viaje desde la notificación, con una barra que muestra por dónde vas, aunque estés usando otra app o con el celular bloqueado." },
         { icono: "caminar", titulo: "Caminata incluida", texto: "Calcula lo que caminás hasta la parada y desde la bajada, por la calle, y te dice la hora a la que llegás." },
         { icono: "paradas", titulo: "Todas las paradas", texto: "Mirá todas las paradas de tu viaje y sabé siempre por dónde vas. Si te querés bajar antes, tocás la parada y listo." },
         { icono: "bus", titulo: "Montevideo y alrededores", texto: "Las líneas urbanas y también las metropolitanas: Ciudad de la Costa, Costa de Oro, Pando, Las Piedras y más." },
-        { icono: "tarjeta", titulo: "Funciona sin internet", texto: "El mapa, las paradas, los horarios y cómo llegar funcionan aunque te quedes sin datos." },
+        { icono: "sinred", titulo: "Funciona sin internet", texto: "El mapa, las paradas, los horarios y cómo llegar funcionan aunque te quedes sin datos." },
+        { icono: "estrella", titulo: "Tus lugares", texto: "Casa, trabajo y tus paradas favoritas a un toque, y lugares buscados por su nombre: «Antel Arena», «Tres Cruces»…" },
       ],
     },
 
@@ -157,8 +159,8 @@ window.OMNIUY = {
 
     novedades: {
       antetitulo: "Lo nuevo",
-      titulo: "En la próxima versión",
-      intro: "Lo que estamos terminando de probar para la próxima entrega.",
+      titulo: "Novedades de la versión 0.3.1",
+      intro: "Lo que sumamos en la última versión.",
       items: [
         { icono: "bus", titulo: "Líneas metropolitanas", texto: "91 líneas a Canelones y San José (C1 a C5, COPSA, COME, Casanova, CITA y más), con sus horarios, recorridos y en «cómo llegar»." },
         { icono: "caminar", titulo: "Buscá lugares por su nombre", texto: "Escribí «Antel Arena», «Hospital de Clínicas» o «Tres Cruces» y andá directo. Funciona sin internet." },
@@ -175,10 +177,10 @@ window.OMNIUY = {
       preguntas: [
         { pregunta: "¿Omniuy es gratis?", respuesta: "Sí, descargarla y usarla es gratis. Más adelante vamos a sumar Omniuy Premium, una suscripción opcional ($50 por mes o $300 por año) con el saldo de tu tarjeta STM, el precio de cada viaje, widgets y más. Lo básico sigue siendo gratis, siempre." },
         { pregunta: "¿Tiene anuncios?", respuesta: "No, y no va a tener. Omniuy no muestra anuncios en ninguna versión, ni en la gratis ni en Premium." },
-        { pregunta: "¿Qué hacen con mis datos?", respuesta: "Nada fuera de tu celular. Omniuy no tiene cuentas, anuncios ni rastreo: tus favoritos, viajes y el saldo de tu tarjeta STM quedan guardados solo en tu teléfono, y tu ubicación no se envía a Omniuy. Todo el detalle está en la Política de privacidad, al pie de esta página." },
-        { pregunta: "¿Es seguro instalar el APK?", respuesta: "Sí. El archivo se descarga directo desde la página oficial del proyecto en GitHub. Android muestra un aviso porque la app todavía no está en Google Play: es normal con cualquier app que se instala por fuera de la tienda. Descargala siempre desde esta página." },
+        { pregunta: "¿Qué hacen con mis datos?", respuesta: "Nada: Omniuy no tiene cuentas, anuncios ni rastreo, y no guarda tus datos en servidores propios. Tus favoritos, viajes y el saldo de tu tarjeta STM quedan en tu celular (y en la copia de seguridad de tu cuenta de Google, si la tenés activada), y tu ubicación no se envía a Omniuy. Todo el detalle está en la Política de privacidad, al pie de esta página." },
+        { pregunta: "¿Cómo la consigo?", respuesta: "Muy pronto en Google Play. Mientras tanto la estamos probando con un grupo chico: si querés sumarte a la prueba, escribinos a soporte@omniuy.app." },
         { pregunta: "¿Funciona fuera de Montevideo?", respuesta: "En el área metropolitana, sí: además de las líneas urbanas de Montevideo, tiene las líneas metropolitanas a Canelones y San José, con sus horarios (estas todavía sin tiempo real). Fuera de esa zona, por ahora no." },
-        { pregunta: "¿Cuándo sale en Google Play?", respuesta: "La app está en pre-alfa y la estamos probando con un grupo chico. Cuando esté estable la vamos a publicar en Google Play. Mientras tanto, podés usar el APK de esta página." },
+        { pregunta: "¿Cuándo sale en Google Play?", respuesta: "Estamos en el proceso de publicarla: primero una prueba con un grupo chico y después para todos. Cuando esté, el botón de Google Play de esta página te lleva directo." },
         { pregunta: "¿Hay versión para iPhone?", respuesta: "Por ahora no: Omniuy es solo para Android." },
         { pregunta: "Encontré un error o tengo una idea, ¿a quién le aviso?", respuesta: "¡Nos encanta! Escribinos a soporte@omniuy.app. Al ser una pre-alfa, cada comentario ayuda muchísimo." },
       ],

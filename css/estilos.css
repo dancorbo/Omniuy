@@ -545,3 +545,6 @@ h1, h2, h3 { line-height: 1.12; letter-spacing: -.02em; }
   html { scroll-behavior: auto; }
   .js .revelar { opacity: 1; transform: none; }
 }
+
+/* Lo escondido con el atributo hidden (ej. lo del APK con las descargas en pausa), aunque su clase tenga display */
+[hidden] { display: none !important; }
