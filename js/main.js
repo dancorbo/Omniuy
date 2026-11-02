@@ -32,7 +32,8 @@
     ruta: '<circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/>',
     sinred: '<path d="M2 8.5a15 15 0 0 1 6.2-3.4M12.9 4.6A15 15 0 0 1 22 8.5M5 12a10 10 0 0 1 4.2-2.3M19 12a10 10 0 0 0-2.5-1.6M8.5 15.5a5 5 0 0 1 5.6-.8"/><circle cx="12" cy="19" r=".8"/><path d="M3 3l18 18"/>',
     estrella: '<path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/>',
-    imagen: '<rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/>'
+    imagen: '<rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/>',
+    compartir: '<circle cx="18" cy="5.5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="18.5" r="2.5"/><path d="M8.6 10.7l6.8-3.9M8.6 13.3l6.8 3.9"/>'
   };
 
   function icono(nombre) {

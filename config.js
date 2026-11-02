@@ -14,9 +14,9 @@ window.OMNIUY = {
 
   /* ---------- VERSIÓN DE LA APP ---------- */
   version: {
-    numero: "0.3.1",              // Número de versión
+    numero: "0.4.0",              // Número de versión
     etiqueta: "Pre-alfa",         // Aparece antes del número: «Pre-alfa 0.3.0»
-    fecha: "2026-10-31",          // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
+    fecha: "2026-11-02",          // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
     // Si está en true, la web lee sola la versión y la fecha del último
     // Release de GitHub. Si falla, usa los datos de arriba.
     leerDeGitHub: true,
@@ -159,15 +159,15 @@ window.OMNIUY = {
 
     novedades: {
       antetitulo: "Lo nuevo",
-      titulo: "Novedades de la versión 0.3.1",
+      titulo: "Novedades de la versión 0.4.0",
       intro: "Lo que sumamos en la última versión.",
       items: [
-        { icono: "bus", titulo: "Líneas metropolitanas", texto: "91 líneas a Canelones y San José (C1 a C5, COPSA, COME, Casanova, CITA y más), con sus horarios, recorridos y en «cómo llegar»." },
-        { icono: "caminar", titulo: "Buscá lugares por su nombre", texto: "Escribí «Antel Arena», «Hospital de Clínicas» o «Tres Cruces» y andá directo. Funciona sin internet." },
-        { icono: "saldo", titulo: "Saldo y movimientos STM", texto: "Entrá con ID Uruguay (también con Abitab o Antel) y tu saldo queda a la vista. (Premium)" },
-        { icono: "tarjeta", titulo: "Precio del pasaje", texto: "Cuánto sale tu viaje y qué boleto pedir: 1 hora, 2 horas o zonal. (Premium)" },
-        { icono: "widget", titulo: "Widgets", texto: "Próximos ómnibus de tus paradas favoritas y el saldo STM en la pantalla de inicio. (Premium)" },
-        { icono: "vivo", titulo: "Mismo ómnibus, otro cartel", texto: "Si tu ómnibus cambia de recorrido en la terminal, te avisa que sigas arriba." },
+        { icono: "tarjeta", titulo: "Combinaciones con su precio", texto: "Cuando tu viaje tiene combinación, ves cuánto sale todo el viaje. Gratis." },
+        { icono: "compartir", titulo: "Compartí tu viaje", texto: "Mandá por WhatsApp (o donde quieras) el viaje recomendado. Si tienen Omniuy, se abre directo en la app." },
+        { icono: "caminar", titulo: "Rápido, menos caminata o menos trasbordos", texto: "En «cómo llegar», elegí con un toque qué preferís." },
+        { icono: "paradas", titulo: "Paradas más claras", texto: "De cerca, cada parada es un cartel como los nuevos del STM, y las que quedaban en medio de la calle ahora están en la vereda." },
+        { icono: "ruta", titulo: "Paso a paso más claro", texto: "Una línea une cada paso desde que salís hasta que llegás, y en el mapa ves de dónde salís." },
+        { icono: "imagen", titulo: "Mapa más limpio", texto: "El mapa claro ahora es en grises, para que los recorridos de los ómnibus resalten." },
       ],
     },
 
