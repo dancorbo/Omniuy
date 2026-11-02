@@ -143,7 +143,7 @@ window.OMNIUY = {
       intro: "Una suscripción opcional para quienes viajan todos los días. Lo básico (mapa, horarios, tiempo real, cómo llegar y el aviso para bajarte) es gratis, siempre.",
       items: [
         { icono: "saldo", titulo: "Tu tarjeta STM", texto: "El saldo y los últimos movimientos de tus tarjetas, sin entrar cada vez a STM en línea." },
-        { icono: "tarjeta", titulo: "Cuánto sale cada viaje", texto: "El precio según tu boleto (común, jubilado, estudiante…) y qué boleto te conviene pedir." },
+        { icono: "tarjeta", titulo: "Tu boleto y cuál pedir", texto: "El precio de todos tus viajes según tu boleto (común, jubilado, estudiante…) y qué boleto te conviene pedir." },
         { icono: "widget", titulo: "Widgets", texto: "Los próximos ómnibus de tus paradas y el saldo STM en la pantalla de inicio." },
         { icono: "campana", titulo: "Viajes a futuro", texto: "«Salir a las» o «Llegar antes de», con aviso para salir a tiempo." },
         { icono: "paradas", titulo: "Parada intermedia", texto: "Pasá por un lugar en el camino y quedate el tiempo que quieras." },
@@ -175,7 +175,7 @@ window.OMNIUY = {
       antetitulo: "Preguntas frecuentes",
       titulo: "¿Dudas?",
       preguntas: [
-        { pregunta: "¿Omniuy es gratis?", respuesta: "Sí, descargarla y usarla es gratis. Más adelante vamos a sumar Omniuy Premium, una suscripción opcional ($50 por mes o $300 por año) con el saldo de tu tarjeta STM, el precio de cada viaje, widgets y más. Lo básico sigue siendo gratis, siempre." },
+        { pregunta: "¿Omniuy es gratis?", respuesta: "Sí, descargarla y usarla es gratis. Más adelante vamos a sumar Omniuy Premium, una suscripción opcional ($50 por mes o $300 por año) con el saldo de tu tarjeta STM, el precio de todos tus viajes según tu boleto, widgets y más. Lo básico sigue siendo gratis, siempre." },
         { pregunta: "¿Tiene anuncios?", respuesta: "No, y no va a tener. Omniuy no muestra anuncios en ninguna versión, ni en la gratis ni en Premium." },
         { pregunta: "¿Qué hacen con mis datos?", respuesta: "Nada: Omniuy no tiene cuentas, anuncios ni rastreo, y no guarda tus datos en servidores propios. Tus favoritos, viajes y el saldo de tu tarjeta STM quedan en tu celular (y en la copia de seguridad de tu cuenta de Google, si la tenés activada), y tu ubicación no se envía a Omniuy. Todo el detalle está en la Política de privacidad, al pie de esta página." },
         { pregunta: "¿Cómo la consigo?", respuesta: "Muy pronto en Google Play. Mientras tanto la estamos probando con un grupo chico: si querés sumarte a la prueba, escribinos a soporte@omniuy.app." },
