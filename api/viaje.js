@@ -75,7 +75,7 @@ module.exports = function (req, res) {
   <meta property="og:title" content="${escapar(titulo)}">
   <meta property="og:description" content="${escapar(descripcion)}">
   <meta property="og:url" content="${escapar(enlace)}">
-  <meta property="og:image" content="${SITIO}/img/og-imagen.png">
+  <meta property="og:image" content="${SITIO}/img/og-imagen.png?v=2">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
