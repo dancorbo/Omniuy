@@ -1,12 +1,15 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "app.omniuy",
       "sha256_cert_fingerprints": [
         "AB:6F:C0:F4:92:AB:82:19:17:B6:12:9D:C4:95:D3:DA:06:AC:B4:28:71:F0:9A:5F:CD:CD:9B:88:BB:F6:D8:82",
-        "40:16:60:67:73:4A:AF:32:21:AB:1A:C4:65:58:A8:0D:85:07:89:08:26:19:82:D7:32:07:43:D9:08:D6:6B:1C"
+        "40:16:60:67:73:4A:AF:32:21:AB:1A:C4:65:58:A8:0D:85:07:89:08:26:19:82:D7:32:07:43:D9:08:D6:6B:1C",
+        "76:C4:94:19:4E:D4:D5:FF:3C:18:35:79:CE:F9:C8:8B:AB:E9:93:F0:CD:9C:AD:6A:DD:51:23:E8:00:1F:57:88"
       ]
     }
   }
