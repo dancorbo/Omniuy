@@ -48,13 +48,14 @@
     <div class="contenedor contenedor--angosto">
       <span class="antetitulo">Privacidad</span>
       <h1>Política de privacidad</h1>
-      <p class="fecha">Última actualización: 1 de noviembre de 2026</p>
+      <p class="fecha">Última actualización: 3 de noviembre de 2026</p>
 
       <div class="resumen">
         <p><strong>En pocas palabras:</strong> Omniuy no tiene cuentas, no muestra anuncios, no usa estadísticas ni
           rastreo y no vende datos. Lo que guardás (favoritos, viajes recientes, el saldo de tu tarjeta STM) queda
           <strong>en tu celular</strong> (y en la copia de seguridad de tu cuenta de Google, si la tenés activada). Tu ubicación se usa en el celular para el mapa y el viaje, y
-          <strong>no se envía a Omniuy</strong>.</p>
+          <strong>no se envía a Omniuy</strong>. El tiempo real de los ómnibus pasa por un servidor de Omniuy que
+          <strong>no guarda nada</strong>.</p>
       </div>
 
       <h2>1. Quién es responsable</h2>
@@ -81,6 +82,7 @@
       <ul>
         <li>Lugares y paradas favoritas, viajes recientes y líneas buscadas.</li>
         <li>Avisos de viajes planificados y el viaje en curso.</li>
+        <li>Tus viajes frecuentes: origen, destino, sus trayectos, los días y la hora del aviso.</li>
         <li>Tus ajustes: tema, ritmo de caminata, tipo de boleto.</li>
         <li>Los datos de tus tarjetas STM que se ven en STM en línea (ver el punto 4).</li>
       </ul>
@@ -106,8 +108,13 @@
       <p>Para funcionar, la app se comunica con estos servicios. Como cualquier conexión a internet, ellos pueden ver
         la dirección IP de tu conexión, según sus propias políticas:</p>
       <ul>
-        <li><strong>Intendencia de Montevideo</strong> (tiempo real de los ómnibus): se envía el número de parada o
-          de línea que estás mirando, no tu ubicación.</li>
+        <li><strong>Servidor de Omniuy</strong> (tiempo real de los ómnibus, en api.omniuy.app): la app
+          le pide los ómnibus de las líneas que estás mirando; <strong>nunca se envía tu ubicación</strong>. Como toda
+          conexión, el servidor recibe la dirección IP de tu conexión: la usa solo en la memoria, durante un minuto,
+          para que nadie haga demasiados pedidos, y <strong>no la guarda</strong> (tampoco guarda qué líneas
+          consultaste). Es un servidor alquilado a Vultr, en São Paulo (Brasil).</li>
+        <li><strong>Intendencia de Montevideo</strong>: el servidor de Omniuy le pide a la Intendencia la posición de
+          todos los ómnibus en servicio, cada unos segundos. La Intendencia ve solo al servidor, no a vos.</li>
         <li><strong>OpenFreeMap</strong> (el mapa, cuando hay internet): pide las partes del mapa que estás viendo.
           Sin internet, la app usa el mapa de Montevideo que trae adentro.</li>
         <li><strong>Buscador de direcciones de Android</strong> (de Google): cuando buscás una dirección con número
@@ -124,9 +131,11 @@
       <ul>
         <li><strong>Ubicación</strong> (precisa o aproximada; con la pantalla apagada, solo durante un viaje que iniciaste, nunca «todo el tiempo»):
           ver el punto 2.</li>
-        <li><strong>Notificaciones y vibración</strong>: avisos del viaje, timbre para bajarte y avisos de viajes planificados.</li>
+        <li><strong>Notificaciones y vibración</strong>: avisos del viaje, timbre para bajarte, avisos de viajes planificados y
+          de tus viajes frecuentes.</li>
         <li><strong>Usar la batería sin restricciones</strong> (opcional): para que Android no corte un viaje en curso.</li>
-        <li><strong>Iniciarse al encender el celular</strong>: solo para volver a programar tus avisos de viaje.</li>
+        <li><strong>Iniciarse al encender el celular</strong>: solo para volver a programar tus avisos de viaje y de
+          tus viajes frecuentes.</li>
         <li><strong>Internet y estado de la red</strong>: tiempo real y mapas; sin conexión, la app avisa y usa los horarios.</li>
       </ul>
 
@@ -146,11 +155,12 @@
       <h2>9. Cómo borrar tus datos</h2>
       <ul>
         <li><strong>De a uno:</strong> en la app podés borrar favoritos, viajes recientes, líneas buscadas, avisos y
-          tarjetas STM (con la ✕ o manteniendo apretado).</li>
+          tarjetas STM (con la ✕ o manteniendo apretado), y tus viajes frecuentes (con ✎ en su tarjeta).</li>
         <li><strong>Todo junto:</strong> en Android, Ajustes › Aplicaciones › Omniuy › Almacenamiento › Borrar datos.</li>
         <li><strong>Desinstalar</strong> la app borra todo lo que guardó en tu celular.</li>
       </ul>
-      <p>Como Omniuy no guarda tus datos en servidores propios, no hay nada más que borrar de nuestro lado.</p>
+      <p>Como Omniuy no guarda tus datos en servidores propios (el servidor del tiempo real no guarda nada), no hay
+        nada más que borrar de nuestro lado.</p>
 
       <h2>10. Esta página web</h2>
       <p>La página omniuy.app está alojada en Vercel y usa la letra Plus Jakarta Sans de Google Fonts. Como en
@@ -166,8 +176,8 @@
       <p>Omniuy no pide datos personales ni crea cuentas, así que no recopila datos de menores.</p>
 
       <h2>13. Cambios en esta política</h2>
-      <p>Si cambia algo importante (por ejemplo, si la app empieza a consultar el tiempo real a través de un servidor
-        propio), lo vamos a actualizar acá, con la fecha de arriba.</p>
+      <p>Si cambia algo importante en lo que la app hace con tus datos, lo vamos a actualizar acá, con la fecha de
+        arriba.</p>
     </div>
   </main>
 

@@ -146,6 +146,7 @@ window.OMNIUY = {
         { icono: "tarjeta", titulo: "Tu boleto y cuál pedir", texto: "El precio de todos tus viajes según tu boleto (común, jubilado, estudiante…) y qué boleto te conviene pedir." },
         { icono: "widget", titulo: "Widgets", texto: "Los próximos ómnibus de tus paradas y el saldo STM en la pantalla de inicio." },
         { icono: "campana", titulo: "Viajes a futuro", texto: "«Salir a las» o «Llegar antes de», con aviso para salir a tiempo." },
+        { icono: "repetir", titulo: "Viajes frecuentes", texto: "Tus viajes de todos los días, con hasta 3 trayectos y un aviso antes de salir (y pausa en los feriados)." },
         { icono: "paradas", titulo: "Parada intermedia", texto: "Pasá por un lugar en el camino y quedate el tiempo que quieras." },
         { icono: "llegada", titulo: "Favoritos sin límite", texto: "Todos los lugares y paradas que quieras (gratis: 2 lugares y 2 paradas)." },
       ],

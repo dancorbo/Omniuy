@@ -16,6 +16,7 @@
     vivo: '<circle cx="12" cy="12" r="2"/><path d="M7.8 7.8a6 6 0 0 0 0 8.4M16.2 7.8a6 6 0 0 1 0 8.4M4.9 4.9a10 10 0 0 0 0 14.2M19.1 4.9a10 10 0 0 1 0 14.2"/>',
     bus: '<rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16M8 18v2M16 18v2"/><circle cx="8" cy="14.5" r=".8"/><circle cx="16" cy="14.5" r=".8"/>',
     campana: '<path d="M6 16v-5a6 6 0 1 1 12 0v5l2 2H4z"/><path d="M10 21a2 2 0 0 0 4 0"/>',
+    repetir: '<path d="M19.5 10A7.5 7.5 0 0 0 5.6 7.5"/><path d="M5 4v3.8h3.8"/><path d="M4.5 14a7.5 7.5 0 0 0 13.9 2.5"/><path d="M19 20v-3.8h-3.8"/>',
     ventana: '<rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18"/><rect x="11" y="12" width="7" height="5" rx="1.5"/>',
     caminar: '<circle cx="13" cy="4" r="2"/><path d="M9 21l2.5-6.5L14 17v4M11.5 14.5L12.5 9l4 3.5 3 .5M12.5 9L8.5 11l-1 4"/>',
     paradas: '<path d="M6 5v14"/><circle cx="6" cy="5" r="2"/><circle cx="6" cy="12" r="2"/><circle cx="6" cy="19" r="2"/><path d="M11 5h9M11 12h9M11 19h6"/>',
