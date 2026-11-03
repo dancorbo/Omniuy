@@ -14,9 +14,9 @@ window.OMNIUY = {
 
   /* ---------- VERSIÓN DE LA APP ---------- */
   version: {
-    numero: "0.4.0",              // Número de versión
+    numero: "0.5.0",              // Número de versión
     etiqueta: "Pre-alfa",         // Aparece antes del número: «Pre-alfa 0.3.0»
-    fecha: "2026-11-02",          // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
+    fecha: "2026-11-03",          // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
     // Si está en true, la web lee sola la versión y la fecha del último
     // Release de GitHub. Si falla, usa los datos de arriba.
     leerDeGitHub: true,
@@ -160,15 +160,15 @@ window.OMNIUY = {
 
     novedades: {
       antetitulo: "Lo nuevo",
-      titulo: "Novedades de la versión 0.4.0",
+      titulo: "Novedades de la versión 0.5.0",
       intro: "Lo que sumamos en la última versión.",
       items: [
-        { icono: "tarjeta", titulo: "Combinaciones con su precio", texto: "Cuando tu viaje tiene combinación, ves cuánto sale todo el viaje. Gratis." },
-        { icono: "compartir", titulo: "Compartí tu viaje", texto: "Mandá por WhatsApp (o donde quieras) el viaje recomendado. Si tienen Omniuy, se abre directo en la app." },
-        { icono: "caminar", titulo: "Rápido, menos caminata o menos trasbordos", texto: "En «cómo llegar», elegí con un toque qué preferís." },
-        { icono: "paradas", titulo: "Paradas más claras", texto: "De cerca, cada parada es un cartel como los nuevos del STM, y las que quedaban en medio de la calle ahora están en la vereda." },
-        { icono: "ruta", titulo: "Paso a paso más claro", texto: "Una línea une cada paso desde que salís hasta que llegás, y en el mapa ves de dónde salís." },
-        { icono: "imagen", titulo: "Mapa más limpio", texto: "El mapa claro ahora es en grises, para que los recorridos de los ómnibus resalten." },
+        { icono: "tarjeta", titulo: "Tarifas al día", texto: "Boleto céntrico y zonal en cualquier línea (con los mapas oficiales de la Intendencia), paradas de intercambio con hasta 3 ómnibus en una hora, Terminal Colón y pago en efectivo. Premium." },
+        { icono: "saldo", titulo: "Más tipos de boleto", texto: "Jubilado en efectivo, prepago nominado y TUS, con lo que te devuelven a fin de mes. Premium." },
+        { icono: "ruta", titulo: "Combinación metropolitana", texto: "Si tu viaje combina un ómnibus urbano con una línea metropolitana, ves que sale desde $80. Gratis." },
+        { icono: "repetir", titulo: "Viajes frecuentes", texto: "Guardá tus viajes de todos los días, con hasta 3 trayectos y un aviso antes de salir. Premium." },
+        { icono: "vivo", titulo: "Tiempo real más firme", texto: "Ahora llega a través del servidor de Omniuy: más estable para todos y sin claves dentro de la app." },
+        { icono: "vibrar", titulo: "Aviso para bajarte más prolijo", texto: "Si el GPS se pierde al final del viaje, el timbre ya no suena cuando ya te bajaste." },
       ],
     },
 
