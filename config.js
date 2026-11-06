@@ -14,9 +14,9 @@ window.OMNIUY = {
 
   /* ---------- VERSIÓN DE LA APP ---------- */
   version: {
-    numero: "0.5.0",              // Número de versión
+    numero: "0.5.1",              // Número de versión
     etiqueta: "Pre-alfa",         // Aparece antes del número: «Pre-alfa 0.3.0»
-    fecha: "2026-11-03",          // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
+    fecha: "2026-11-06",          // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
     // Si está en true, la web lee sola la versión y la fecha del último
     // Release de GitHub. Si falla, usa los datos de arriba.
     leerDeGitHub: true,
@@ -144,7 +144,7 @@ window.OMNIUY = {
       items: [
         { icono: "saldo", titulo: "Tu tarjeta STM", texto: "El saldo y los últimos movimientos de tus tarjetas, sin entrar cada vez a STM en línea." },
         { icono: "tarjeta", titulo: "Tu boleto y cuál pedir", texto: "El precio de todos tus viajes según tu boleto (común, jubilado, estudiante…) y qué boleto te conviene pedir." },
-        { icono: "widget", titulo: "Widgets", texto: "Los próximos ómnibus de tus paradas y el saldo STM en la pantalla de inicio." },
+        { icono: "widget", titulo: "Widgets", texto: "Los próximos ómnibus de tus paradas, tu próximo viaje frecuente y el saldo STM en la pantalla de inicio." },
         { icono: "campana", titulo: "Viajes a futuro", texto: "«Salir a las» o «Llegar antes de», con aviso para salir a tiempo." },
         { icono: "repetir", titulo: "Viajes frecuentes", texto: "Tus viajes de todos los días, con hasta 3 trayectos y un aviso antes de salir (y pausa en los feriados)." },
         { icono: "paradas", titulo: "Parada intermedia", texto: "Pasá por un lugar en el camino y quedate el tiempo que quieras." },
@@ -160,15 +160,13 @@ window.OMNIUY = {
 
     novedades: {
       antetitulo: "Lo nuevo",
-      titulo: "Novedades de la versión 0.5.0",
+      titulo: "Novedades de la versión 0.5.1",
       intro: "Lo que sumamos en la última versión.",
       items: [
-        { icono: "tarjeta", titulo: "Tarifas al día", texto: "Boleto céntrico y zonal en cualquier línea (con los mapas oficiales de la Intendencia), paradas de intercambio con hasta 3 ómnibus en una hora, Terminal Colón y pago en efectivo. Premium." },
-        { icono: "saldo", titulo: "Más tipos de boleto", texto: "Jubilado en efectivo, prepago nominado y TUS, con lo que te devuelven a fin de mes. Premium." },
-        { icono: "ruta", titulo: "Combinación metropolitana", texto: "Si tu viaje combina un ómnibus urbano con una línea metropolitana, ves que sale desde $80. Gratis." },
-        { icono: "repetir", titulo: "Viajes frecuentes", texto: "Guardá tus viajes de todos los días, con hasta 3 trayectos y un aviso antes de salir. Premium." },
-        { icono: "vivo", titulo: "Tiempo real más firme", texto: "Ahora llega a través del servidor de Omniuy: más estable para todos y sin claves dentro de la app." },
-        { icono: "vibrar", titulo: "Aviso para bajarte más prolijo", texto: "Si el GPS se pierde al final del viaje, el timbre ya no suena cuando ya te bajaste." },
+        { icono: "widget", titulo: "Widget de viajes frecuentes", texto: "Tu próximo viaje en la pantalla de inicio: cambia solo según la hora, te dice cuándo llegás y cuándo pasa cada ómnibus, también en vivo. Premium." },
+        { icono: "vibrar", titulo: "GPS más preciso en el viaje", texto: "El punto se mueve sin internet y el aviso para bajarte llega mejor. Si el ahorro de batería puede atrasarlo, la app te avisa." },
+        { icono: "ruta", titulo: "Un punto que sigue tu recorrido", texto: "Se mueve más suave y dobla con el ómnibus en las curvas." },
+        { icono: "vivo", titulo: "El punto siempre a la vista", texto: "Si se corta la conexión o cambiás de tema, el punto sigue arriba del recorrido y la tarjeta no lo tapa." },
       ],
     },
 
