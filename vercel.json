@@ -1,6 +1,26 @@
 {
-  "regions": ["gru1"],
+  "regions": [
+    "gru1"
+  ],
   "rewrites": [
-    { "source": "/viaje", "destination": "/api/viaje" }
+    {
+      "source": "/viaje",
+      "destination": "/api/viaje"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "TDM-Reservation",
+          "value": "1"
+        },
+        {
+          "key": "TDM-Policy",
+          "value": "https://www.omniuy.app/legal/"
+        }
+      ]
+    }
   ]
 }

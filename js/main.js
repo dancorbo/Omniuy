@@ -52,6 +52,21 @@
     });
   }
 
+  // Texto escapado con las direcciones web (https://…) y los correos convertidos en enlaces (para las respuestas de las
+  // preguntas frecuentes: «¿Cómo la consigo?» lleva los links de la prueba, un paso por renglón). Se escapa ANTES: no se
+  // puede meter HTML
+  function conEnlaces(texto) {
+    return esc(texto)
+      .replace(/https:\/\/[^\s<]+[^\s<.,;:!?)]/g, function (url) {
+        return '<a href="' + url + '" target="_blank" rel="noopener">' + url.replace(/^https:\/\//, '') + '</a>';
+      })
+      .replace(/[\w.+-]+@[\w-]+\.[\w.]+[\w]/g, function (correo) {
+        return '<a href="mailto:' + correo + '">' + correo + '</a>';
+      })
+      // Un salto de línea en el texto (\n) es un renglón nuevo
+      .replace(/\n/g, '<br>');
+  }
+
   function leer(objeto, ruta) {
     return ruta.split('.').reduce(function (o, k) { return o == null ? undefined : o[k]; }, objeto);
   }
@@ -283,7 +298,7 @@
     pintarLista('lista-faq', T.faq && T.faq.preguntas, function (p) {
       return '<details class="revelar"><summary>' + esc(p.pregunta) +
         '<span class="faq__mas" aria-hidden="true"></span></summary>' +
-        '<div class="faq__respuesta"><p>' + esc(p.respuesta) + '</p></div></details>';
+        '<div class="faq__respuesta"><p>' + conEnlaces(p.respuesta) + '</p></div></details>';
     });
   }
 

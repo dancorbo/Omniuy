@@ -14,9 +14,9 @@ window.OMNIUY = {
 
   /* ---------- VERSIÓN DE LA APP ---------- */
   version: {
-    numero: "0.5.1",              // Número de versión
+    numero: "0.5.2",              // Número de versión
     etiqueta: "Pre-alfa",         // Aparece antes del número: «Pre-alfa 0.3.0»
-    fecha: "2026-11-06",          // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
+    fecha: "2026-11-07",          // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
     // Si está en true, la web lee sola la versión y la fecha del último
     // Release de GitHub. Si falla, usa los datos de arriba.
     leerDeGitHub: true,
@@ -97,7 +97,7 @@ window.OMNIUY = {
         { icono: "ventana", titulo: "Siempre a la vista", texto: "Seguí el viaje desde la notificación, con una barra que muestra por dónde vas, aunque estés usando otra app o con el celular bloqueado." },
         { icono: "caminar", titulo: "Caminata incluida", texto: "Calcula lo que caminás hasta la parada y desde la bajada, por la calle, y te dice la hora a la que llegás." },
         { icono: "paradas", titulo: "Todas las paradas", texto: "Mirá todas las paradas de tu viaje y sabé siempre por dónde vas. Si te querés bajar antes, tocás la parada y listo." },
-        { icono: "bus", titulo: "Montevideo y alrededores", texto: "Las líneas urbanas y también las metropolitanas: Ciudad de la Costa, Costa de Oro, Pando, Las Piedras y más." },
+        { icono: "bus", titulo: "Montevideo y alrededores", texto: "Las líneas urbanas y también las suburbanas: Ciudad de la Costa, Costa de Oro, Pando, Las Piedras y más." },
         { icono: "sinred", titulo: "Funciona sin internet", texto: "El mapa, las paradas, los horarios y cómo llegar funcionan aunque te quedes sin datos." },
         { icono: "estrella", titulo: "Tus lugares", texto: "Casa, trabajo y tus paradas favoritas a un toque, y lugares buscados por su nombre: «Antel Arena», «Tres Cruces»…" },
       ],
@@ -160,13 +160,13 @@ window.OMNIUY = {
 
     novedades: {
       antetitulo: "Lo nuevo",
-      titulo: "Novedades de la versión 0.5.1",
+      titulo: "Novedades de la versión 0.5.2",
       intro: "Lo que sumamos en la última versión.",
       items: [
-        { icono: "widget", titulo: "Widget de viajes frecuentes", texto: "Tu próximo viaje en la pantalla de inicio: cambia solo según la hora, te dice cuándo llegás y cuándo pasa cada ómnibus, también en vivo. Premium." },
-        { icono: "vibrar", titulo: "GPS más preciso en el viaje", texto: "El punto se mueve sin internet y el aviso para bajarte llega mejor. Si el ahorro de batería puede atrasarlo, la app te avisa." },
-        { icono: "ruta", titulo: "Un punto que sigue tu recorrido", texto: "Se mueve más suave y dobla con el ómnibus en las curvas." },
-        { icono: "vivo", titulo: "El punto siempre a la vista", texto: "Si se corta la conexión o cambiás de tema, el punto sigue arriba del recorrido y la tarjeta no lo tapa." },
+        { icono: "paradas", titulo: "Las paradas de tu viaje, en el mapa", texto: "Ves todas las paradas por las que pasa tu ómnibus, y se van marcando a medida que avanzás." },
+        { icono: "vibrar", titulo: "El timbre, en el momento justo", texto: "Suena cuando dejás atrás la penúltima parada, ya camino a la tuya: ni antes ni después." },
+        { icono: "bus", titulo: "Líneas suburbanas", texto: "Las líneas a Canelones y San José ahora se llaman suburbanas, como en la calle." },
+        { icono: "estrella", titulo: "Premium de regalo en la prueba", texto: "Mientras dura la prueba en Google Play, podés usar Premium gratis y ver cómo es la app con y sin Premium." },
       ],
     },
 
@@ -177,9 +177,9 @@ window.OMNIUY = {
         { pregunta: "¿Omniuy es gratis?", respuesta: "Sí, descargarla y usarla es gratis. Más adelante vamos a sumar Omniuy Premium, una suscripción opcional ($50 por mes o $300 por año) con el saldo de tu tarjeta STM, el precio de todos tus viajes según tu boleto, widgets y más. Lo básico sigue siendo gratis, siempre." },
         { pregunta: "¿Tiene anuncios?", respuesta: "No, y no va a tener. Omniuy no muestra anuncios en ninguna versión, ni en la gratis ni en Premium." },
         { pregunta: "¿Qué hacen con mis datos?", respuesta: "Nada: Omniuy no tiene cuentas, anuncios ni rastreo, y no guarda tus datos en servidores propios. Tus favoritos, viajes y el saldo de tu tarjeta STM quedan en tu celular (y en la copia de seguridad de tu cuenta de Google, si la tenés activada), y tu ubicación no se envía a Omniuy. Todo el detalle está en la Política de privacidad, al pie de esta página." },
-        { pregunta: "¿Cómo la consigo?", respuesta: "Muy pronto en Google Play. Mientras tanto la estamos probando con un grupo chico: si querés sumarte a la prueba, escribinos a soporte@omniuy.app." },
-        { pregunta: "¿Funciona fuera de Montevideo?", respuesta: "En el área metropolitana, sí: además de las líneas urbanas de Montevideo, tiene las líneas metropolitanas a Canelones y San José, con sus horarios (estas todavía sin tiempo real). Fuera de esa zona, por ahora no." },
-        { pregunta: "¿Cuándo sale en Google Play?", respuesta: "Estamos en el proceso de publicarla: primero una prueba con un grupo chico y después para todos. Cuando esté, el botón de Google Play de esta página te lleva directo." },
+        { pregunta: "¿Cómo la consigo?", respuesta: "Ya podés sumarte a la prueba en Google Play (solo Android). Mientras dura, Premium es de regalo.\n\n1. Unite al grupo de testers, con la misma cuenta de Google de tu Play Store: https://groups.google.com/g/testers-omniuy\n2. Entrá a https://play.google.com/apps/testing/app.omniuy y tocá «Convertirse en tester» (o «verificador»). Si dice que no tenés acceso, esperá unos minutos y probá de nuevo.\n3. Descargá Omniuy desde Google Play: https://play.google.com/store/apps/details?id=app.omniuy\n\nTe pedimos que no salgas de la prueba ni la desinstales por al menos 14 días: así Google nos deja publicarla para todos. Errores, ideas o críticas: soporte@omniuy.app" },
+        { pregunta: "¿Funciona fuera de Montevideo?", respuesta: "En el área metropolitana, sí: además de las líneas urbanas de Montevideo, tiene las líneas suburbanas a Canelones y San José, con sus horarios (estas todavía sin tiempo real). Fuera de esa zona, por ahora no." },
+        { pregunta: "¿Cuándo sale en Google Play?", respuesta: "Ahora está en prueba (ver «¿Cómo la consigo?»): cuando termine, la publicamos para todos y el botón de Google Play de esta página te va a llevar directo." },
         { pregunta: "¿Hay versión para iPhone?", respuesta: "Por ahora no: Omniuy es solo para Android." },
         { pregunta: "Encontré un error o tengo una idea, ¿a quién le aviso?", respuesta: "¡Nos encanta! Escribinos a soporte@omniuy.app. Al ser una pre-alfa, cada comentario ayuda muchísimo." },
       ],
@@ -192,7 +192,7 @@ window.OMNIUY = {
         { texto: "Desarrollado por Daniel Corbo" },
         { texto: "Hecho con Claude Code", enlace: "https://claude.com/claude-code" },
         { texto: "Datos abiertos del STM / Intendencia de Montevideo", enlace: "https://ckan.montevideo.gub.uy/" },
-        { texto: "Horarios metropolitanos: Ministerio de Transporte y Obras Públicas (datos abiertos)", enlace: "https://catalogodatos.gub.uy/" },
+        { texto: "Horarios de las líneas suburbanas: Ministerio de Transporte y Obras Públicas (datos abiertos)", enlace: "https://catalogodatos.gub.uy/" },
         { texto: "MapLibre", enlace: "https://maplibre.org/" },
         { texto: "OpenFreeMap © OpenMapTiles", enlace: "https://openfreemap.org/" },
         { texto: "Calles, lugares y mapas: © colaboradores de OpenStreetMap (ODbL)", enlace: "https://www.openstreetmap.org/copyright" },
