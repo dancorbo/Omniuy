@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es-UY">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Reserva de minería de textos y datos e inteligencia artificial (ver /legal/) -->
+  <meta name="tdm-reservation" content="1">
+  <meta name="tdm-policy" content="https://www.omniuy.app/legal/">
+  <meta name="robots" content="noai, noimageai">
+  <title>Datos abiertos · Omniuy</title>
+  <meta name="description" content="Las bases de datos de Omniuy hechas con OpenStreetMap, para descargar bajo la licencia ODbL.">
+  <link rel="canonical" href="https://www.omniuy.app/datos/">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="icon" href="/favicon.ico?v=2" sizes="32x32">
+  <link rel="icon" href="/img/favicon-32.png?v=2" type="image/png" sizes="32x32">
+  <link rel="icon" href="/img/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/img/icono-180.png?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/estilos.css">
+  <style>
+    /* La barra de arriba va sobre fondo claro: acá lleva el fondo oscuro (si no, "Omniuy" queda blanco sobre blanco) */
+    .barra { background: var(--principal, #0A0A0A); }
+    .legal { padding: 120px 0 72px; }
+    .legal h1 { font-size: clamp(2rem, 5vw, 2.8rem); margin: 8px 0 6px; }
+    .legal h2 { font-size: 1.3rem; margin: 40px 0 10px; }
+    .legal p, .legal li { color: var(--suave); line-height: 1.65; }
+    .legal ul { padding-left: 1.2em; }
+    .legal li { margin: 6px 0; }
+    .legal strong { color: var(--texto, inherit); }
+    .legal .resumen {
+      margin: 28px 0 8px; padding: 20px 22px; border-radius: 20px;
+      background: var(--superficie); border: 1px solid var(--borde);
+    }
+    .legal .resumen p { margin: 0; }
+    .legal .fecha { color: var(--suave); font-size: .95rem; }
+  </style>
+</head>
+<body>
+  <header class="barra">
+    <div class="contenedor barra__in">
+      <a class="marca" href="/" aria-label="Omniuy, inicio">
+        <img src="/img/logo.svg" alt="" width="34" height="34">
+        <span>Omniuy</span>
+      </a>
+      <a class="btn btn--acento btn--chico" href="/">Volver al inicio</a>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="contenedor contenedor--angosto">
+      <span class="antetitulo">Datos abiertos</span>
+      <h1>Datos abiertos de Omniuy</h1>
+      <p class="fecha">Última actualización: 7 de noviembre de 2026 · versión 0.5.2 de la app</p>
+
+      <div class="resumen">
+        <p><strong>En pocas palabras:</strong> la app usa calles, lugares y mapas de <strong>OpenStreetMap</strong>, un
+          mapa libre hecho por voluntarios. Su licencia pide que las bases de datos que armamos con esos datos estén
+          disponibles para cualquiera, con la misma licencia. Acá están, para descargar.</p>
+      </div>
+
+      <h2>Licencia</h2>
+      <p>Estos archivos se ofrecen bajo la <a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Database
+        License (ODbL) 1.0</a>. Contienen información de OpenStreetMap,
+        <a href="https://www.openstreetmap.org/copyright">© colaboradores de OpenStreetMap</a>, y algunos también datos
+        abiertos de la Intendencia de Montevideo (STM) y del Ministerio de Transporte y Obras Públicas.</p>
+      <p>La licencia se aplica <strong>solo a estos archivos de datos</strong>. El código, el diseño, los textos, el
+        nombre y el logo de Omniuy no se incluyen y siguen con todos los derechos reservados (ver el
+        <a href="/legal/">Aviso legal</a>).</p>
+
+      <h2>Archivos de la versión 0.5.2</h2>
+      <ul>
+        <li><a href="https://github.com/dancorbo/Omniuy/releases/download/datos-0.5.2/recorridos.json">recorridos.json</a> · 7,2 MB<br>Recorridos de las líneas. Los de las suburbanas, dibujados por las calles de OpenStreetMap.</li>
+        <li><a href="https://github.com/dancorbo/Omniuy/releases/download/datos-0.5.2/paradas.geojson">paradas.geojson</a> · 1,7 MB<br>Paradas de ómnibus; unas 1.000 corridas a la vereda con las calles de OpenStreetMap.</li>
+        <li><a href="https://github.com/dancorbo/Omniuy/releases/download/datos-0.5.2/lugares.json">lugares.json</a> · 0,8 MB<br>Lugares con nombre de Montevideo y el área metropolitana, para el buscador.</li>
+        <li><a href="https://github.com/dancorbo/Omniuy/releases/download/datos-0.5.2/calles.bin">calles.bin</a> · 2,2 MB<br>Red de calles y veredas para calcular las caminatas (formato explicado en LEEME.txt).</li>
+        <li><a href="https://github.com/dancorbo/Omniuy/releases/download/datos-0.5.2/montevideo.mbtiles">montevideo.mbtiles</a> · 15,3 MB<br>El mapa de Montevideo que va adentro de la app (recorte de OpenFreeMap, sin cambios).</li>
+        <li><a href="https://github.com/dancorbo/Omniuy/releases/download/datos-0.5.2/LEEME.txt">LEEME.txt</a><br>Qué es cada archivo, su formato y la licencia.</li>
+      </ul>
+      <p>Cuando salga una versión nueva de la app con datos distintos, los vamos a publicar acá.</p>
+
+      <h2>Consultas</h2>
+      <p>Escribinos a <a href="mailto:propuestas@omniuy.app">propuestas@omniuy.app</a>.</p>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__in">
+      <div>
+        <a class="marca" href="/">
+          <img src="/img/logo.svg" alt="" width="34" height="34">
+          <span>Omniuy</span>
+        </a>
+      </div>
+      <div class="pie__legal">
+        <p>Omniuy es un proyecto independiente. No está afiliado a la Intendencia de Montevideo ni al STM.</p>
+        <p><a href="/privacidad/">Política de privacidad</a> · <a href="/legal/">Aviso legal</a> · <a href="/datos/">Datos abiertos</a></p>
+        <p>© 2026 Omniuy · Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
