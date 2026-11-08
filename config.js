@@ -14,9 +14,9 @@ window.OMNIUY = {
 
   /* ---------- VERSIÓN DE LA APP ---------- */
   version: {
-    numero: "0.5.2",              // Número de versión
+    numero: "0.5.3",              // Número de versión
     etiqueta: "Pre-alfa",         // Aparece antes del número: «Pre-alfa 0.3.0»
-    fecha: "2026-11-07",          // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
+    fecha: "2026-11-08",          // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
     // Si está en true, la web lee sola la versión y la fecha del último
     // Release de GitHub. Si falla, usa los datos de arriba.
     leerDeGitHub: true,
@@ -160,13 +160,13 @@ window.OMNIUY = {
 
     novedades: {
       antetitulo: "Lo nuevo",
-      titulo: "Novedades de la versión 0.5.2",
+      titulo: "Novedades de la versión 0.5.3",
       intro: "Lo que sumamos en la última versión.",
       items: [
-        { icono: "paradas", titulo: "Las paradas de tu viaje, en el mapa", texto: "Ves todas las paradas por las que pasa tu ómnibus, y se van marcando a medida que avanzás." },
-        { icono: "vibrar", titulo: "El timbre, en el momento justo", texto: "Suena cuando dejás atrás la penúltima parada, ya camino a la tuya: ni antes ni después." },
-        { icono: "bus", titulo: "Líneas suburbanas", texto: "Las líneas a Canelones y San José ahora se llaman suburbanas, como en la calle." },
-        { icono: "estrella", titulo: "Premium de regalo en la prueba", texto: "Mientras dura la prueba en Google Play, podés usar Premium gratis y ver cómo es la app con y sin Premium." },
+        { icono: "ruta", titulo: "Recorridos por la calle", texto: "Las líneas van por las calles, con sus curvas: ya no se salen a la vereda ni doblan en ángulo recto." },
+        { icono: "paradas", titulo: "Paradas del viaje más claras", texto: "Del color de la línea, con la subida, los cambios y tu bajada marcados, y se van marcando parejas a medida que pasás." },
+        { icono: "bus", titulo: "Si el ómnibus sigue, quedate arriba", texto: "Cuando cambia de cartel en la terminal te avisa que sigas, y calcula bien a qué hora llegás." },
+        { icono: "vibrar", titulo: "Avisos en el momento justo", texto: "«Bajate en la próxima» llega junto con el timbre, y la caminata hasta tu parada ya no se saltea." },
       ],
     },
 
