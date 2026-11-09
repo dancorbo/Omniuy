@@ -77,6 +77,10 @@
       <div class="contenedor hero__in">
         <div class="hero__texto">
           <span class="chip revelar" data-version>Pre-alfa 0.5.3</span>
+          <!-- Aviso de la próxima versión (config.js › textos.seViene.aviso; vacío = no se ve) -->
+          <a class="anuncio revelar" href="#se-viene" data-aviso-se-viene>
+            <span data-t="seViene.aviso"></span><span aria-hidden="true">→</span>
+          </a>
           <h1 class="revelar" style="--retardo:80ms">
             <span data-t="hero.titulo">Tu ómnibus en Montevideo,</span>
             <em data-t="hero.tituloDestacado">en vivo.</em>
@@ -150,12 +154,19 @@
     <!-- ================= FUNCIONES ================= -->
     <section class="seccion" id="funciones">
       <div class="contenedor">
-        <header class="seccion__cabeza revelar">
-          <span class="antetitulo" data-t="funciones.antetitulo"></span>
-          <h2 data-t="funciones.titulo"></h2>
-          <p class="seccion__intro" data-t="funciones.intro"></p>
-        </header>
-        <div class="grid grid--funciones" id="lista-funciones"></div>
+        <div class="cabeza-con-flechas">
+          <header class="seccion__cabeza revelar">
+            <span class="antetitulo" data-t="funciones.antetitulo"></span>
+            <h2 data-t="funciones.titulo"></h2>
+            <p class="seccion__intro" data-t="funciones.intro"></p>
+          </header>
+          <!-- Flechas: solo con mouse y si las tarjetas están en fila (ventana angosta) -->
+          <div class="flechas" data-flechas-de="lista-funciones" hidden>
+            <button type="button" class="flecha" data-desplazar="-1" aria-label="Ver las anteriores"><span data-icono="izquierda"></span></button>
+            <button type="button" class="flecha" data-desplazar="1" aria-label="Ver más"><span data-icono="derecha"></span></button>
+          </div>
+        </div>
+        <div class="grid grid--funciones deslizable" id="lista-funciones" tabindex="0" aria-label="Funciones"></div>
       </div>
     </section>
 
@@ -225,12 +236,18 @@
     <section class="seccion" id="premium">
       <div class="contenedor">
         <div class="premium revelar">
-          <header class="seccion__cabeza">
-            <span class="etiqueta" data-t="premium.antetitulo"></span>
-            <h2 data-t="premium.titulo"></h2>
-            <p class="seccion__intro" data-t="premium.intro"></p>
-          </header>
-          <div class="grid grid--premium" id="lista-premium"></div>
+          <div class="cabeza-con-flechas">
+            <header class="seccion__cabeza">
+              <span class="etiqueta" data-t="premium.antetitulo"></span>
+              <h2 data-t="premium.titulo"></h2>
+              <p class="seccion__intro" data-t="premium.intro"></p>
+            </header>
+            <div class="flechas" data-flechas-de="lista-premium" hidden>
+              <button type="button" class="flecha" data-desplazar="-1" aria-label="Ver los anteriores"><span data-icono="izquierda"></span></button>
+              <button type="button" class="flecha" data-desplazar="1" aria-label="Ver más"><span data-icono="derecha"></span></button>
+            </div>
+          </div>
+          <div class="grid grid--premium deslizable" id="lista-premium" tabindex="0" aria-label="Beneficios de Premium"></div>
           <!-- Tarifas (config.js › premium.precios) -->
           <div class="precios" id="lista-precios"></div>
           <p class="precios__nota" data-t="premium.notaPrecios"></p>
@@ -238,15 +255,39 @@
       </div>
     </section>
 
+    <!-- ================= SE VIENE (próxima versión) ================= -->
+    <section class="seccion" id="se-viene">
+      <div class="contenedor">
+        <div class="cabeza-con-flechas">
+          <header class="seccion__cabeza revelar">
+            <span class="antetitulo" data-t="seViene.antetitulo"></span>
+            <h2 data-t="seViene.titulo"></h2>
+            <p class="seccion__intro" data-t="seViene.intro"></p>
+          </header>
+          <div class="flechas" data-flechas-de="lista-se-viene" hidden>
+            <button type="button" class="flecha" data-desplazar="-1" aria-label="Ver las anteriores"><span data-icono="izquierda"></span></button>
+            <button type="button" class="flecha" data-desplazar="1" aria-label="Ver más"><span data-icono="derecha"></span></button>
+          </div>
+        </div>
+        <div class="grid grid--funciones deslizable" id="lista-se-viene" tabindex="0" aria-label="Lo que trae la próxima versión"></div>
+      </div>
+    </section>
+
     <!-- ================= LO NUEVO ================= -->
     <section class="seccion seccion--alterna" id="novedades">
       <div class="contenedor">
-        <header class="seccion__cabeza revelar">
-          <span class="antetitulo" data-t="novedades.antetitulo"></span>
-          <h2 data-t="novedades.titulo"></h2>
-          <p class="seccion__intro" data-t="novedades.intro"></p>
-        </header>
-        <div class="grid grid--funciones" id="lista-novedades"></div>
+        <div class="cabeza-con-flechas">
+          <header class="seccion__cabeza revelar">
+            <span class="antetitulo" data-t="novedades.antetitulo"></span>
+            <h2 data-t="novedades.titulo"></h2>
+            <p class="seccion__intro" data-t="novedades.intro"></p>
+          </header>
+          <div class="flechas" data-flechas-de="lista-novedades" hidden>
+            <button type="button" class="flecha" data-desplazar="-1" aria-label="Ver las anteriores"><span data-icono="izquierda"></span></button>
+            <button type="button" class="flecha" data-desplazar="1" aria-label="Ver más"><span data-icono="derecha"></span></button>
+          </div>
+        </div>
+        <div class="grid grid--funciones deslizable" id="lista-novedades" tabindex="0" aria-label="Novedades"></div>
       </div>
     </section>
 

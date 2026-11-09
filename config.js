@@ -158,6 +158,26 @@ window.OMNIUY = {
       notaPrecios: "Va a estar disponible cuando Omniuy esté en Google Play. Podés cancelar cuando quieras.",
     },
 
+    /* ---------- SE VIENE (la próxima versión) ----------
+       Para sacarlo: dejá «aviso» vacío ("") y «items» vacío ([]): el aviso y la sección desaparecen solos.  */
+    seViene: {
+      aviso: "Se viene la 0.6.0 · lunes 16 de noviembre",
+      antetitulo: "Se viene",
+      titulo: "Lo que trae la versión 0.6.0",
+      intro: "Nuestra actualización más grande hasta ahora: un mapa con más vida y un buscador que te entiende. Llega el lunes 16 de noviembre, primero a quienes están en la prueba de Google Play.",
+      items: [
+        { icono: "vivo", titulo: "Ómnibus en vivo a tu alrededor", texto: "Al abrir el mapa ves los ómnibus que andan cerca, sobre la calle y con su número de línea. Tocá uno y mirá su línea entera." },
+        { icono: "buscar", titulo: "Un buscador que te entiende", texto: "Aunque escribas con errores («Ribera», «shoping tres cruses»), por siglas como BPS o SODRE, y con tus búsquedas recientes a un toque." },
+        { icono: "estrella", titulo: "25.000 lugares", texto: "Locales, restoranes, gimnasios, consultorios y más: buscalos por su nombre y miralos en el mapa con su ícono." },
+        { icono: "recarga", titulo: "¿Dónde recargo la STM?", texto: "Los locales de recarga en el mapa (Abitab, RedPagos, cambios y oficinas STM) y el más cercano a un toque." },
+        { icono: "ruta", titulo: "Direcciones exactas", texto: "Las direcciones con número de puerta, con el buscador oficial de direcciones del Estado." },
+        { icono: "paradas", titulo: "Paradas por número", texto: "Escribí el número de la parada y llegás directo. También lo ves en la tarjeta de cada parada." },
+        { icono: "flecha", titulo: "Para dónde va", texto: "Flechitas sobre los recorridos que muestran el sentido del ómnibus." },
+        { icono: "saldo", titulo: "Tus tarjetas STM, una al lado de la otra", texto: "Deslizá para pasar de una tarjeta a otra, y cambiá de tarjeta en el widget del saldo con sus flechitas (Premium)." },
+        { icono: "ventana", titulo: "Más cómoda de usar", texto: "Cerrá las pantallas deslizando hacia abajo y elegí origen y destino entre todos los lugares con nombre." },
+      ],
+    },
+
     novedades: {
       antetitulo: "Lo nuevo",
       titulo: "Novedades de la versión 0.5.3",

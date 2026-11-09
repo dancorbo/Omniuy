@@ -32,6 +32,9 @@
     derecha: '<path d="M9 18l6-6-6-6"/>',
     ruta: '<circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/>',
     sinred: '<path d="M2 8.5a15 15 0 0 1 6.2-3.4M12.9 4.6A15 15 0 0 1 22 8.5M5 12a10 10 0 0 1 4.2-2.3M19 12a10 10 0 0 0-2.5-1.6M8.5 15.5a5 5 0 0 1 5.6-.8"/><circle cx="12" cy="19" r=".8"/><path d="M3 3l18 18"/>',
+    buscar: '<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.4-4.4"/>',
+    recarga: '<path d="M13 19H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4M3 9.5h18M18.5 14v7M15 17.5h7"/>',
+    flecha: '<path d="M4 12h15M13 6l6 6-6 6"/>',
     estrella: '<path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/>',
     imagen: '<rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/>',
     compartir: '<circle cx="18" cy="5.5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="18.5" r="2.5"/><path d="M8.6 10.7l6.8-3.9M8.6 13.3l6.8 3.9"/>'
@@ -287,6 +290,19 @@
         '<span class="precio__cada">' + esc(p.cada) + '</span></div>';
     });
 
+    // Se viene (la próxima versión): sin items, la sección no se muestra; sin aviso, no aparece arriba
+    var seViene = T.seViene || {};
+    if (!Array.isArray(seViene.items) || !seViene.items.length) {
+      var seccionSeViene = document.getElementById('se-viene');
+      if (seccionSeViene) seccionSeViene.hidden = true;
+    }
+    if (!seViene.aviso) $$('[data-aviso-se-viene]').forEach(function (el) { el.hidden = true; });
+    pintarLista('lista-se-viene', seViene.items, function (f, i) {
+      return '<article class="tarjeta revelar" style="--retardo:' + (i % 3) * 90 + 'ms">' +
+        '<div class="icono">' + icono(f.icono) + '</div>' +
+        '<h3>' + esc(f.titulo) + '</h3><p>' + esc(f.texto) + '</p></article>';
+    });
+
     // Lo nuevo
     pintarLista('lista-novedades', T.novedades && T.novedades.items, function (f, i) {
       return '<article class="tarjeta revelar" style="--retardo:' + (i % 3) * 90 + 'ms">' +
@@ -343,6 +359,47 @@
     carrusel.addEventListener('scroll', function () { window.requestAnimationFrame(actualizar); }, { passive: true });
     window.addEventListener('resize', actualizar);
     actualizar();
+  }
+
+  /* ---------- Flechas de las tarjetas deslizables (como las del carrusel) ----------
+     Cada grupo de flechas [data-flechas-de="id"] mueve la lista con ese id. Solo con mouse y si hay más para ver
+     (con la ventana ancha las tarjetas están en grilla y no hay nada que deslizar: las flechas no aparecen). */
+  function deslizablesConFlechas() {
+    var conMouse = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    if (!conMouse) return;
+    $$('[data-flechas-de]').forEach(function (flechas) {
+      var lista = document.getElementById(flechas.getAttribute('data-flechas-de'));
+      if (!lista) return;
+      var botones = $$('[data-desplazar]', flechas);
+
+      function paso() {
+        var tarjeta = lista.firstElementChild;
+        var ancho = tarjeta ? tarjeta.getBoundingClientRect().width + 14 : 300;
+        return Math.max(ancho, Math.floor(lista.clientWidth / ancho) * ancho);
+      }
+
+      function actualizar() {
+        var maximo = lista.scrollWidth - lista.clientWidth;
+        flechas.hidden = !(maximo > 4);
+        botones.forEach(function (b) {
+          b.disabled = Number(b.getAttribute('data-desplazar')) < 0
+            ? lista.scrollLeft <= 4
+            : lista.scrollLeft >= maximo - 4;
+        });
+      }
+
+      botones.forEach(function (b) {
+        b.addEventListener('click', function () {
+          lista.scrollBy({
+            left: Number(b.getAttribute('data-desplazar')) * paso(),
+            behavior: reducirMovimiento ? 'auto' : 'smooth'
+          });
+        });
+      });
+      lista.addEventListener('scroll', function () { window.requestAnimationFrame(actualizar); }, { passive: true });
+      window.addEventListener('resize', actualizar);
+      actualizar();
+    });
   }
 
   /* ---------- Íconos en el HTML ---------- */
@@ -420,6 +477,7 @@
   animarAlAparecer();
   seguirScroll();
   carruselConFlechas();
+  deslizablesConFlechas();
 
   // Detiene el ómnibus del mapa si el celular pide reducir movimiento
   var mapa = $('[data-mapa]');

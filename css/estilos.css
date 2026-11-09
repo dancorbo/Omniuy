@@ -193,6 +193,16 @@ h1, h2, h3 { line-height: 1.12; letter-spacing: -.02em; }
   content: ""; width: 8px; height: 8px; border-radius: 50%;
   background: var(--acento); animation: latido 2s ease-out infinite;
 }
+/* Aviso de la próxima versión, al lado del chip de la versión */
+.anuncio {
+  display: inline-flex; align-items: center; gap: 8px; margin-left: 8px;
+  padding: 6px 14px; border-radius: 999px;
+  background: rgba(117, 206, 140, .14); border: 1px solid rgba(117, 206, 140, .45);
+  color: var(--acento); font-size: .82rem; font-weight: 700; text-decoration: none;
+}
+.anuncio:hover, .anuncio:focus-visible { background: rgba(117, 206, 140, .24); }
+.anuncio[hidden] { display: none; }
+@media (max-width: 520px) { .anuncio { margin: 10px 0 0; } }
 .hero h1 { margin: 20px 0 16px; font-size: clamp(2.3rem, 9vw, 4rem); font-weight: 800; letter-spacing: -.035em; line-height: 1.04; }
 .hero h1 span, .hero h1 em { display: block; }
 .hero h1 em { font-style: normal; color: var(--acento); }
@@ -350,6 +360,24 @@ h1, h2, h3 { line-height: 1.12; letter-spacing: -.02em; }
 .carrusel::-webkit-scrollbar { display: none; }
 .carrusel:focus-visible { outline: 3px solid var(--acento); outline-offset: -3px; border-radius: 12px; }
 .captura { flex: 0 0 auto; width: min(240px, 66vw); margin: 0; scroll-snap-align: start; }
+
+/* Tarjetas deslizables: en pantallas angostas, una al lado de la otra (se asoma la siguiente) y se deslizan con el
+   dedo; en las anchas, la grilla de siempre. Las flechas de arriba aparecen solo con mouse y si hay más para ver */
+.cabeza-con-flechas { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 40px; }
+.cabeza-con-flechas .seccion__cabeza { margin-bottom: 0; }
+.premium .cabeza-con-flechas { margin-bottom: 32px; }
+@media (max-width: 759px) {
+  .grid.deslizable {
+    --sangria: var(--margen);
+    display: flex; gap: 14px;
+    margin: 0 calc(var(--sangria) * -1); padding: 6px var(--sangria) 22px;
+    overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding: 0 var(--sangria);
+    scrollbar-width: none;
+  }
+  .grid.deslizable::-webkit-scrollbar { display: none; }
+  .grid.deslizable > * { flex: 0 0 86%; scroll-snap-align: start; }
+  .premium .grid.deslizable { --sangria: 24px; }
+}
 .captura__marco {
   position: relative; overflow: hidden;
   aspect-ratio: 1080 / 2116; border-radius: 30px;
