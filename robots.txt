@@ -1,6 +1,6 @@
-# Omniuy: los buscadores pueden indexar la página.
-# El contenido de Omniuy NO se puede usar para entrenar ni alimentar inteligencia artificial,
-# ni para minería de textos y datos (ver https://www.omniuy.app/legal/).
+# TeArrimo: los buscadores pueden indexar la página.
+# El contenido de TeArrimo NO se puede usar para entrenar ni alimentar inteligencia artificial,
+# ni para minería de textos y datos (ver https://www.tearrimo.app/legal/).
 
 User-agent: GPTBot
 User-agent: ClaudeBot

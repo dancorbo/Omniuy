@@ -237,7 +237,7 @@
         '<h3>' + esc(f.titulo) + '</h3><p>' + esc(f.texto) + '</p></article>';
     });
 
-    // Un viaje con Omniuy
+    // Un viaje con TeArrimo
     pintarLista('lista-viaje', T.viaje && T.viaje.items, function (p) {
       return '<li class="paso revelar">' +
         '<div class="paso__icono">' + icono(p.icono) + '</div>' +
@@ -467,7 +467,7 @@
     try {
       armarPagina();
     } catch (e) {
-      console.error('Omniuy: error al armar la página', e);
+      console.error('TeArrimo: error al armar la página', e);
     }
   } else {
     var aviso = document.createElement('div');

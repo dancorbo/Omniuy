@@ -45,7 +45,7 @@ window.OMNIUY = {
   logo: "img/logo.svg",           // Ruta del logo (cuadrado)
   colores: {
     principal: "#0A0A0A",         // Fondo oscuro de la portada y el pie
-    acento: "#75CE8C",            // Verde Omniuy: botones y destacados
+    acento: "#75CE8C",            // Verde TeArrimo: botones y destacados
     sobreAcento: "#0A0A0A",       // Color del texto encima del verde
   },
 
@@ -53,9 +53,9 @@ window.OMNIUY = {
   contacto: {
     // Correos que aparecen en el pie. «para» es el texto que va arriba de cada uno.
     emails: [
-      { para: "Consultas generales", email: "contacto@omniuy.app" },
-      { para: "Ayuda y errores de la app", email: "soporte@omniuy.app" },
-      { para: "Propuestas, prensa y alianzas", email: "propuestas@omniuy.app" },
+      { para: "Consultas generales", email: "contacto@tearrimo.app" },
+      { para: "Ayuda y errores de la app", email: "soporte@tearrimo.app" },
+      { para: "Propuestas, prensa y alianzas", email: "propuestas@tearrimo.app" },
     ],
   },
 
@@ -77,7 +77,7 @@ window.OMNIUY = {
     hero: {
       titulo: "Tu ómnibus en Montevideo,",
       tituloDestacado: "en vivo.",
-      subtitulo: "Mirá dónde viene, bajate en la parada justa y llegá a la hora que te dijimos. Omniuy te acompaña todo el viaje, de puerta a puerta.",
+      subtitulo: "Mirá dónde viene, bajate en la parada justa y llegá a la hora que te dijimos. TeArrimo te acompaña todo el viaje, de puerta a puerta.",
       boton: "Descargar APK",
       nota: "Gratis · Sin anuncios · Solo Android",
       enlaceAyuda: "¿Cómo se instala?",
@@ -105,7 +105,7 @@ window.OMNIUY = {
 
     viaje: {
       antetitulo: "Cómo funciona",
-      titulo: "Un viaje con Omniuy",
+      titulo: "Un viaje con TeArrimo",
       intro: "Desde que salís de tu casa hasta que llegás.",
       items: [
         { icono: "caminar", titulo: "Salís caminando", texto: "Sabés cuánto tardás hasta la parada, así no esperás de más." },
@@ -119,7 +119,7 @@ window.OMNIUY = {
 
     capturas: {
       antetitulo: "Capturas",
-      titulo: "Así se ve Omniuy",
+      titulo: "Así se ve TeArrimo",
       intro: "Deslizá para ver más.",
       introEscritorio: "Usá las flechas para ver más.",   // En computadoras
     },
@@ -134,12 +134,12 @@ window.OMNIUY = {
         { titulo: "Permití la instalación", texto: "Si Android te avisa, tocá «Configuración» y activá «Permitir de esta fuente». Después volvé atrás." },
         { titulo: "Instalá y listo", texto: "Tocá «Instalar». Si Play Protect muestra un aviso, elegí «Instalar de todos modos»." },
       ],
-      aviso: "Los avisos de Android son normales: aparecen con cualquier app que no viene de Google Play. Descargá Omniuy solo desde esta página.",
+      aviso: "Los avisos de Android son normales: aparecen con cualquier app que no viene de Google Play. Descargá TeArrimo solo desde esta página.",
     },
 
     premium: {
       antetitulo: "Próximamente",
-      titulo: "Omniuy Premium",
+      titulo: "TeArrimo Premium",
       intro: "Una suscripción opcional para quienes viajan todos los días. Lo básico (mapa, horarios, tiempo real, cómo llegar y el aviso para bajarte) es gratis, siempre.",
       items: [
         { icono: "saldo", titulo: "Tu tarjeta STM", texto: "El saldo y los últimos movimientos de tus tarjetas, sin entrar cada vez a STM en línea." },
@@ -155,7 +155,7 @@ window.OMNIUY = {
         { nombre: "Mensual", precio: "$50", cada: "por mes" },
         { nombre: "Anual", precio: "$300", cada: "por año", etiqueta: "Ahorrás 50 %" },
       ],
-      notaPrecios: "Va a estar disponible cuando Omniuy esté en Google Play. Podés cancelar cuando quieras.",
+      notaPrecios: "Va a estar disponible cuando TeArrimo esté en Google Play. Podés cancelar cuando quieras.",
     },
 
     /* ---------- SE VIENE (la próxima versión) ----------
@@ -193,14 +193,14 @@ window.OMNIUY = {
       antetitulo: "Preguntas frecuentes",
       titulo: "¿Dudas?",
       preguntas: [
-        { pregunta: "¿Omniuy es gratis?", respuesta: "Sí, descargarla y usarla es gratis. Más adelante vamos a sumar Omniuy Premium, una suscripción opcional ($50 por mes o $300 por año) con el saldo de tu tarjeta STM, el precio de todos tus viajes según tu boleto, widgets y más. Lo básico sigue siendo gratis, siempre." },
-        { pregunta: "¿Tiene anuncios?", respuesta: "No, y no va a tener. Omniuy no muestra anuncios en ninguna versión, ni en la gratis ni en Premium." },
-        { pregunta: "¿Qué hacen con mis datos?", respuesta: "Nada: Omniuy no tiene cuentas, anuncios ni rastreo, y no guarda tus datos en servidores propios. Tus favoritos, viajes y el saldo de tu tarjeta STM quedan en tu celular (y en la copia de seguridad de tu cuenta de Google, si la tenés activada), y tu ubicación no se envía a Omniuy. Todo el detalle está en la Política de privacidad, al pie de esta página." },
-        { pregunta: "¿Cómo la consigo?", respuesta: "Ya podés sumarte a la prueba en Google Play (solo Android). Mientras dura, Premium es de regalo.\n\n1. Unite al grupo de testers, con la misma cuenta de Google de tu Play Store: https://groups.google.com/g/testers-omniuy\n2. Entrá a https://play.google.com/apps/testing/app.omniuy y tocá «Convertirse en tester» (o «verificador»). Si dice que no tenés acceso, esperá unos minutos y probá de nuevo.\n3. Descargá Omniuy desde Google Play: https://play.google.com/store/apps/details?id=app.omniuy\n\nTe pedimos que no salgas de la prueba ni la desinstales por al menos 14 días: así Google nos deja publicarla para todos. Errores, ideas o críticas: soporte@omniuy.app" },
+        { pregunta: "¿TeArrimo es gratis?", respuesta: "Sí, descargarla y usarla es gratis. Más adelante vamos a sumar TeArrimo Premium, una suscripción opcional ($50 por mes o $300 por año) con el saldo de tu tarjeta STM, el precio de todos tus viajes según tu boleto, widgets y más. Lo básico sigue siendo gratis, siempre." },
+        { pregunta: "¿Tiene anuncios?", respuesta: "No, y no va a tener. TeArrimo no muestra anuncios en ninguna versión, ni en la gratis ni en Premium." },
+        { pregunta: "¿Qué hacen con mis datos?", respuesta: "Nada: TeArrimo no tiene cuentas, anuncios ni rastreo, y no guarda tus datos en servidores propios. Tus favoritos, viajes y el saldo de tu tarjeta STM quedan en tu celular (y en la copia de seguridad de tu cuenta de Google, si la tenés activada), y tu ubicación no se envía a TeArrimo. Todo el detalle está en la Política de privacidad, al pie de esta página." },
+        { pregunta: "¿Cómo la consigo?", respuesta: "Ya podés sumarte a la prueba en Google Play (solo Android). Mientras dura, Premium es de regalo.\n\n1. Unite al grupo de testers, con la misma cuenta de Google de tu Play Store: https://groups.google.com/g/testers-omniuy\n2. Entrá a https://play.google.com/apps/testing/app.omniuy y tocá «Convertirse en tester» (o «verificador»). Si dice que no tenés acceso, esperá unos minutos y probá de nuevo.\n3. Descargá TeArrimo desde Google Play: https://play.google.com/store/apps/details?id=app.omniuy\n\nTe pedimos que no salgas de la prueba ni la desinstales por al menos 14 días: así Google nos deja publicarla para todos. Errores, ideas o críticas: soporte@tearrimo.app" },
         { pregunta: "¿Funciona fuera de Montevideo?", respuesta: "En el área metropolitana, sí: además de las líneas urbanas de Montevideo, tiene las líneas suburbanas a Canelones y San José, con sus horarios (estas todavía sin tiempo real). Fuera de esa zona, por ahora no." },
         { pregunta: "¿Cuándo sale en Google Play?", respuesta: "Ahora está en prueba (ver «¿Cómo la consigo?»): cuando termine, la publicamos para todos y el botón de Google Play de esta página te va a llevar directo." },
-        { pregunta: "¿Hay versión para iPhone?", respuesta: "Por ahora no: Omniuy es solo para Android." },
-        { pregunta: "Encontré un error o tengo una idea, ¿a quién le aviso?", respuesta: "¡Nos encanta! Escribinos a soporte@omniuy.app. Al ser una pre-alfa, cada comentario ayuda muchísimo." },
+        { pregunta: "¿Hay versión para iPhone?", respuesta: "Por ahora no: TeArrimo es solo para Android." },
+        { pregunta: "Encontré un error o tengo una idea, ¿a quién le aviso?", respuesta: "¡Nos encanta! Escribinos a soporte@tearrimo.app. Al ser una pre-alfa, cada comentario ayuda muchísimo." },
       ],
     },
 
@@ -217,7 +217,7 @@ window.OMNIUY = {
         { texto: "Calles, lugares y mapas: © colaboradores de OpenStreetMap (ODbL)", enlace: "https://www.openstreetmap.org/copyright" },
         { texto: "Letra Plus Jakarta Sans (OFL)" },
       ],
-      aviso: "Omniuy es un proyecto independiente. No está afiliado a la Intendencia de Montevideo ni al STM.",
+      aviso: "TeArrimo es un proyecto independiente. No está afiliado a la Intendencia de Montevideo ni al STM.",
     },
   },
 };

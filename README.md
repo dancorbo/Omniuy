@@ -1,7 +1,9 @@
-# Omniuy · Página web
+# TeArrimo · Página web
 
-Landing de **Omniuy**, la app Android de ómnibus en vivo para Montevideo.
-Sitio estático (HTML, CSS y JS) publicado en Vercel: https://omniuy.app
+Landing de **TeArrimo** (antes Omniuy), la app Android de ómnibus en vivo para Montevideo.
+Sitio estático (HTML, CSS y JS) publicado en Vercel: https://www.tearrimo.app
+(`tearrimo.app`, `tearrimo.com` y `www.tearrimo.com` redirigen ahí; `www.omniuy.app` sigue mostrando la misma página
+mientras haya versiones viejas de la app que usan sus enlaces).
 
 Cada cambio que llega a `main` se publica solo.
 
@@ -56,7 +58,7 @@ img/              Logo, favicon, imagen para compartir y capturas
 
 ## Servidor intermedio (tiempo real)
 
-Ya NO está en esta página: el tiempo real lo da el servidor de Omniuy en un VPS en São Paulo
-(`api.omniuy.app`; el código está en el proyecto de la app, `servidor/`), porque la Intendencia bloquea lo que
+Ya NO está en esta página: el tiempo real lo da el servidor de TeArrimo en un VPS en São Paulo
+(`api.tearrimo.app`, y `api.omniuy.app` para las versiones viejas; el código está en el proyecto de la app, `servidor/`), porque la Intendencia bloquea lo que
 viene de fuera de Uruguay salvo direcciones que habilita a pedido. La función de Vercel que había antes
 (`api/buses.js`) se borró el 2026-11-08 junto con las claves de la Intendencia que tenía en Vercel.
