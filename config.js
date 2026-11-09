@@ -173,9 +173,8 @@ window.OMNIUY = {
         { icono: "ruta", titulo: "Direcciones exactas", texto: "Las direcciones con número de puerta, con el buscador oficial de direcciones del Estado." },
         { icono: "paradas", titulo: "Paradas por número", texto: "Escribí el número de la parada y llegás directo. También lo ves en la tarjeta de cada parada." },
         { icono: "flecha", titulo: "Para dónde va", texto: "Flechitas sobre los recorridos que muestran el sentido del ómnibus." },
-        { icono: "saldo", titulo: "Tus tarjetas STM, una al lado de la otra", texto: "Deslizá para pasar de una tarjeta a otra, y cambiá de tarjeta en el widget del saldo con sus flechitas (Premium)." },
-        { icono: "ventana", titulo: "Más cómoda de usar", texto: "Cerrá las pantallas deslizando hacia abajo y elegí origen y destino entre todos los lugares con nombre." },
-      ],
+        { icono: "calendario", titulo: "Más simple y cómoda", texto: "Los viajes frecuentes, en una sola pantalla y sin guardar nada hasta que tocás «Guardar». «Atrás» te lleva a donde estabas, las pantallas se cierran deslizando hacia abajo y elegís origen y destino entre todos los lugares con nombre." },
+        { icono: "saldo", titulo: "Tus tarjetas STM, una al lado de la otra", texto: "Deslizá para pasar de una tarjeta a otra, y cambiá de tarjeta en el widget del saldo con sus flechitas (Premium)." },      ],
     },
 
     novedades: {
