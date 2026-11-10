@@ -37,6 +37,7 @@
     flecha: '<path d="M4 12h15M13 6l6 6-6 6"/>',
     calendario: '<rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 9.5h16M8.5 3v3.5M15.5 3v3.5M9 14.5l2 2 4-4"/>',
     estrella: '<path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/>',
+    pin: '<path d="M12 21c-3.5-4-6.5-7.5-6.5-11a6.5 6.5 0 0 1 13 0c0 3.5-3 7-6.5 11z"/><path d="M9.3 7.6h5.4M12 7.6v5.6"/>',
     imagen: '<rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/>',
     compartir: '<circle cx="18" cy="5.5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="18.5" r="2.5"/><path d="M8.6 10.7l6.8-3.9M8.6 13.3l6.8 3.9"/>'
   };
