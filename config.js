@@ -167,13 +167,13 @@ window.OMNIUY = {
       intro: "Nuestra actualización más grande hasta ahora: un mapa con más vida y un buscador que te entiende. Llega el lunes 16 de noviembre, primero a quienes están en la prueba de Google Play.",
       items: [
         { icono: "pin", titulo: "Ahora nos llamamos TeArrimo", texto: "Omniuy cambió de nombre: es la misma app, con tus favoritos y viajes intactos, y un ícono nuevo. Encontranos como TeArrimo en Google Play." },
-        { icono: "vivo", titulo: "Ómnibus en vivo a tu alrededor", texto: "Al abrir el mapa ves los ómnibus que andan cerca, sobre la calle y con su número de línea. Tocá uno y mirá su línea entera." },
+        { icono: "vivo", titulo: "Ómnibus en vivo a tu alrededor", texto: "Al abrir el mapa ves los ómnibus que andan cerca, sobre la calle, con su número de línea y flechitas que muestran para dónde van. Tocá uno y mirá su línea entera." },
         { icono: "buscar", titulo: "Un buscador que te entiende", texto: "Aunque escribas con errores («Ribera», «shoping tres cruses»), por siglas como BPS o SODRE, y con tus búsquedas recientes a un toque." },
         { icono: "estrella", titulo: "25.000 lugares", texto: "Locales, restoranes, gimnasios, consultorios y más: buscalos por su nombre y miralos en el mapa con su ícono." },
         { icono: "recarga", titulo: "¿Dónde recargo la STM?", texto: "Los locales de recarga en el mapa (Abitab, RedPagos, cambios y oficinas STM) y el más cercano a un toque." },
         { icono: "ruta", titulo: "Direcciones y paradas exactas", texto: "Las direcciones con número de puerta, con el buscador oficial de direcciones del Estado. Y escribí el número de una parada para ir directo: también lo ves en su tarjeta." },
-        { icono: "flecha", titulo: "Para dónde va", texto: "Flechitas sobre los recorridos que muestran el sentido del ómnibus." },
-        { icono: "calendario", titulo: "Más simple y cómoda", texto: "Los viajes frecuentes, en una sola pantalla y sin guardar nada hasta que tocás «Guardar». «Atrás» te lleva a donde estabas, las pantallas se cierran deslizando hacia abajo y elegís origen y destino entre todos los lugares con nombre." },
+        { icono: "campana", titulo: "Avisos a tu medida", texto: "Avisos de 5 a 60 minutos antes de salir. Si todavía no salís, «Volver a avisar»; si ya estás listo, «Iniciar viaje» y mirá venir tu ómnibus. Tus viajes frecuentes abren directo en tus trayectos." },
+        { icono: "calendario", titulo: "Más simple y cómoda", texto: "Minimizá el viaje en curso para ver el mapa: te avisa igual en los momentos importantes. Los viajes frecuentes, en una sola pantalla; «Atrás» te lleva a donde estabas y las pantallas se cierran deslizando hacia abajo." },
         { icono: "saldo", titulo: "Tus tarjetas STM, una al lado de la otra", texto: "Deslizá para pasar de una tarjeta a otra, y cambiá de tarjeta en el widget del saldo con sus flechitas (Premium)." },      ],
     },
 
