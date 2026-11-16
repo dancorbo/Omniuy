@@ -14,9 +14,9 @@ window.OMNIUY = {
 
   /* ---------- VERSIÓN DE LA APP ---------- */
   version: {
-    numero: "0.5.3",              // Número de versión
+    numero: "0.6.0",              // Número de versión
     etiqueta: "Pre-alfa",         // Aparece antes del número: «Pre-alfa 0.3.0»
-    fecha: "2026-11-08",          // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
+    fecha: "2026-11-16",          // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
     // Si está en true, la web lee sola la versión y la fecha del último
     // Release de GitHub. Si falla, usa los datos de arriba.
     leerDeGitHub: true,
@@ -161,10 +161,17 @@ window.OMNIUY = {
     /* ---------- SE VIENE (la próxima versión) ----------
        Para sacarlo: dejá «aviso» vacío ("") y «items» vacío ([]): el aviso y la sección desaparecen solos.  */
     seViene: {
-      aviso: "Se viene la 0.6.0 · lunes 16 de noviembre",
+      aviso: "",
       antetitulo: "Se viene",
-      titulo: "Lo que trae la versión 0.6.0",
-      intro: "Nuestra actualización más grande hasta ahora: un mapa con más vida y un buscador que te entiende. Llega el lunes 16 de noviembre, primero a quienes están en la prueba de Google Play.",
+      titulo: "",
+      intro: "",
+      items: [],
+    },
+
+    novedades: {
+      antetitulo: "Lo nuevo",
+      titulo: "Novedades de la versión 0.6.0",
+      intro: "Nuestra actualización más grande hasta ahora: un mapa con más vida y un buscador que te entiende. Ya está en la prueba de Google Play.",
       items: [
         { icono: "pin", titulo: "Ahora nos llamamos TeArrimo", texto: "Omniuy cambió de nombre: es la misma app, con tus favoritos y viajes intactos, y un ícono nuevo. Encontranos como TeArrimo en Google Play." },
         { icono: "vivo", titulo: "Ómnibus en vivo a tu alrededor", texto: "Al abrir el mapa ves los ómnibus que andan cerca, sobre la calle, con su número de línea y hacia dónde van. Tocá uno y mirá su línea entera." },
@@ -174,18 +181,7 @@ window.OMNIUY = {
         { icono: "ruta", titulo: "Direcciones y paradas exactas", texto: "Las direcciones con número de puerta, con el buscador oficial de direcciones del Estado. Y para ir directo a una parada, escribí su número o elegila entre tus favoritas." },
         { icono: "campana", titulo: "Avisos a tu medida", texto: "Avisos de 5 a 60 minutos antes de salir. Si todavía no salís, «Volver a avisar»; si ya estás listo, «Iniciar viaje» y mirá venir tu ómnibus. Tus viajes frecuentes abren directo en tus trayectos." },
         { icono: "calendario", titulo: "Más simple y cómoda", texto: "Minimizá el viaje en curso o mirá otras líneas sin perderlo: te avisa igual en los momentos importantes. Los viajes frecuentes, en una sola pantalla, y «Atrás» te lleva a donde estabas." },
-        { icono: "saldo", titulo: "Tus tarjetas STM, una al lado de la otra", texto: "Deslizá para pasar de una tarjeta a otra, y cambiá de tarjeta en el widget del saldo con sus flechitas (Premium)." },      ],
-    },
-
-    novedades: {
-      antetitulo: "Lo nuevo",
-      titulo: "Novedades de la versión 0.5.3",
-      intro: "Lo que sumamos en la última versión.",
-      items: [
-        { icono: "ruta", titulo: "Recorridos por la calle", texto: "Las líneas van por las calles, con sus curvas: ya no se salen a la vereda ni doblan en ángulo recto." },
-        { icono: "paradas", titulo: "Paradas del viaje más claras", texto: "Del color de la línea, con la subida, los cambios y tu bajada marcados, y se van marcando parejas a medida que pasás." },
-        { icono: "bus", titulo: "Si el ómnibus sigue, quedate arriba", texto: "Cuando cambia de cartel en la terminal te avisa que sigas, y calcula bien a qué hora llegás." },
-        { icono: "vibrar", titulo: "Avisos en el momento justo", texto: "«Bajate en la próxima» llega junto con el timbre, y la caminata hasta tu parada ya no se saltea." },
+        { icono: "saldo", titulo: "Tus tarjetas STM, una al lado de la otra", texto: "Deslizá para pasar de una tarjeta a otra, y cambiá de tarjeta en el widget del saldo con sus flechitas (Premium)." },
       ],
     },
 

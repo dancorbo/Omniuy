@@ -52,7 +52,7 @@
     <div class="contenedor contenedor--angosto">
       <span class="antetitulo">Privacidad</span>
       <h1>Política de privacidad</h1>
-      <p class="fecha">Última actualización: 3 de noviembre de 2026</p>
+      <p class="fecha">Última actualización: 16 de noviembre de 2026</p>
 
       <div class="resumen">
         <p><strong>En pocas palabras:</strong> TeArrimo no tiene cuentas, no muestra anuncios, no usa estadísticas ni
@@ -84,7 +84,7 @@
       <h2>3. Lo que se guarda en tu celular</h2>
       <p>Todo esto queda guardado <strong>en tu celular</strong>, dentro de la app (nunca en servidores de TeArrimo):</p>
       <ul>
-        <li>Lugares y paradas favoritas, viajes recientes y líneas buscadas.</li>
+        <li>Lugares y paradas favoritas, viajes recientes, búsquedas recientes y líneas buscadas.</li>
         <li>Avisos de viajes planificados y el viaje en curso.</li>
         <li>Tus viajes frecuentes: origen, destino, sus trayectos, los días y la hora del aviso.</li>
         <li>Tus ajustes: tema, ritmo de caminata, tipo de boleto.</li>
@@ -113,7 +113,8 @@
         la dirección IP de tu conexión, según sus propias políticas:</p>
       <ul>
         <li><strong>Servidor de TeArrimo</strong> (tiempo real de los ómnibus, en api.tearrimo.app): la app
-          le pide los ómnibus de las líneas que estás mirando; <strong>nunca se envía tu ubicación</strong>. Como toda
+          le pide los ómnibus de las líneas que estás mirando o de las líneas que pasan por la zona del mapa que estás
+          viendo; <strong>nunca se envía tu ubicación</strong>. Como toda
           conexión, el servidor recibe la dirección IP de tu conexión: la usa solo en la memoria, durante un minuto,
           para que nadie haga demasiados pedidos, y <strong>no la guarda</strong> (tampoco guarda qué líneas
           consultaste). Es un servidor alquilado a Vultr, en São Paulo (Brasil).</li>
@@ -121,9 +122,10 @@
           todos los ómnibus en servicio, cada unos segundos. La Intendencia ve solo al servidor, no a vos.</li>
         <li><strong>OpenFreeMap</strong> (el mapa, cuando hay internet): pide las partes del mapa que estás viendo.
           Sin internet, la app usa el mapa de Montevideo que trae adentro.</li>
-        <li><strong>Buscador de direcciones de Android</strong> (de Google): cuando buscás una dirección con número
-          y hay internet, se envía el texto que escribiste. Los lugares con nombre, las esquinas y tus favoritos se
-          buscan dentro de la app, sin internet.</li>
+        <li><strong>Buscadores de direcciones</strong>: cuando buscás una dirección con número de puerta y hay internet,
+          se envía el texto que escribiste al buscador oficial de direcciones del Estado (IDE Uruguay,
+          direcciones.ide.uy) y, si hace falta, al buscador de direcciones de Android (de Google). Los lugares con
+          nombre, las esquinas, las paradas y tus favoritos se buscan dentro de la app, sin internet.</li>
         <li><strong>Google Play</strong>: al instalar y actualizar la app desde la tienda, Google puede registrar
           datos de la instalación y, si la app se cierra por un error, un informe técnico del error, según su propia
           política. TeArrimo solo ve esos datos agrupados y sin identificarte.</li>
