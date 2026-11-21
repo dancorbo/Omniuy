@@ -19,7 +19,7 @@ window.OMNIUY = {
     fecha: "2026-11-21",          // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
     // Si está en true, la web lee sola la versión y la fecha del último
     // Release de GitHub. Si falla, usa los datos de arriba.
-    leerDeGitHub: true,
+    leerDeGitHub: false,
   },
 
   /* ---------- DESCARGA ---------- */
