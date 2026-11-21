@@ -14,9 +14,9 @@ window.OMNIUY = {
 
   /* ---------- VERSIÓN DE LA APP ---------- */
   version: {
-    numero: "0.6.0",              // Número de versión
+    numero: "0.6.1",              // Número de versión
     etiqueta: "Pre-alfa",         // Aparece antes del número: «Pre-alfa 0.3.0»
-    fecha: "2026-11-16",          // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
+    fecha: "2026-11-21",          // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
     // Si está en true, la web lee sola la versión y la fecha del último
     // Release de GitHub. Si falla, usa los datos de arriba.
     leerDeGitHub: true,
@@ -170,18 +170,13 @@ window.OMNIUY = {
 
     novedades: {
       antetitulo: "Lo nuevo",
-      titulo: "Novedades de la versión 0.6.0",
-      intro: "Nuestra actualización más grande hasta ahora: un mapa con más vida y un buscador que te entiende. Ya está en la prueba de Google Play.",
+      titulo: "Novedades de la versión 0.6.1",
+      intro: "Compará tus opciones de un vistazo, cambiá de ómnibus sin cortar el viaje y, si querés, suscribite a Premium. Ya está en la prueba de Google Play.",
       items: [
-        { icono: "pin", titulo: "Ahora nos llamamos TeArrimo", texto: "Omniuy cambió de nombre: es la misma app, con tus favoritos y viajes intactos, y un ícono nuevo. Encontranos como TeArrimo en Google Play." },
-        { icono: "vivo", titulo: "Ómnibus en vivo a tu alrededor", texto: "Al abrir el mapa ves los ómnibus que andan cerca, sobre la calle, con su número de línea y hacia dónde van. Tocá uno y mirá su línea entera." },
-        { icono: "buscar", titulo: "Un buscador que te entiende", texto: "Aunque escribas con errores («Ribera», «shoping tres cruses»), por siglas como BPS o SODRE, y con tus búsquedas recientes a un toque." },
-        { icono: "estrella", titulo: "25.000 lugares", texto: "Locales, restoranes, gimnasios, consultorios y más: buscalos por su nombre y miralos en el mapa con su ícono." },
-        { icono: "recarga", titulo: "¿Dónde recargo la STM?", texto: "Los locales de recarga en el mapa (Abitab, RedPagos, cambios y oficinas STM) y el más cercano a un toque." },
-        { icono: "ruta", titulo: "Direcciones y paradas exactas", texto: "Las direcciones con número de puerta, con el buscador oficial de direcciones del Estado. Y para ir directo a una parada, escribí su número o elegila entre tus favoritas." },
-        { icono: "campana", titulo: "Avisos a tu medida", texto: "Avisos de 5 a 60 minutos antes de salir. Si todavía no salís, «Volver a avisar»; si ya estás listo, «Iniciar viaje» y mirá venir tu ómnibus. Tus viajes frecuentes abren directo en tus trayectos." },
-        { icono: "calendario", titulo: "Más simple y cómoda", texto: "Minimizá el viaje en curso o mirá otras líneas sin perderlo: te avisa igual en los momentos importantes. Los viajes frecuentes, en una sola pantalla, y «Atrás» te lleva a donde estabas." },
-        { icono: "saldo", titulo: "Tus tarjetas STM, una al lado de la otra", texto: "Deslizá para pasar de una tarjeta a otra, y cambiá de tarjeta en el widget del saldo con sus flechitas (Premium)." },
+        { icono: "ruta", titulo: "Compará opciones deslizando", texto: "En «Cómo llegar», cada opción en su tarjeta: deslizá para pasar de una a otra y mirá en el mapa la que estás viendo, con las demás transparentes." },
+        { icono: "bus", titulo: "Cambiá de ómnibus en pleno viaje", texto: "¿Viene otro que te sirve más? Tocá «Cambiar ómnibus», elegí otra opción y el viaje sigue con ese, sin cortarse." },
+        { icono: "estrella", titulo: "Premium por suscripción", texto: "Ya podés suscribirte a Premium desde la app, por mes o por año, con Google Play. Mientras dure la prueba, lo seguís teniendo de regalo." },
+        { icono: "buscar", titulo: "Más rápida", texto: "El buscador y las direcciones responden antes, y el mapa muestra siempre tu viaje entero cuando minimizás la tarjeta." },
       ],
     },
 
