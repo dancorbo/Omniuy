@@ -204,13 +204,14 @@
 
     // Google Play
     var play = C.googlePlay || {};
+    var enTienda = play.disponible && play.enlace;
+    $$('[data-play-badge]').forEach(function (badge) {
+      badge.href = enTienda ? play.enlace : '#';
+      badge.hidden = !enTienda;
+    });
     $$('[data-play]').forEach(function (boton) {
-      if (play.disponible && play.enlace) {
-        boton.href = play.enlace;
-        boton.removeAttribute('aria-disabled');
-        boton.removeAttribute('role');
-        boton.classList.add('disponible', 'btn--pulso');
-        $('small', boton).textContent = 'Disponible en';
+      if (enTienda) {
+        boton.hidden = true; // En la tienda se usa el badge oficial
       } else {
         boton.addEventListener('click', function (e) {
           e.preventDefault();

@@ -137,12 +137,14 @@ h1, h2, h3 { line-height: 1.12; letter-spacing: -.02em; }
   cursor: help;
 }
 .btn--play:hover { background: rgba(255, 255, 255, .09); }
-.btn--play.disponible {
-  cursor: pointer; border: 0;
-  background: var(--acento); color: var(--sobre-acento);
-  box-shadow: 0 12px 28px -12px var(--acento);
-}
-.btn--play.disponible:hover { background: var(--acento); box-shadow: 0 16px 36px -12px var(--acento); }
+.btn--play[hidden] { display: none; }
+
+/* Badge oficial de Google Play (sin modificar: solo se escala) */
+.badge-play { display: inline-block; align-self: flex-start; border-radius: 12px; transition: transform .15s ease; }
+.badge-play[hidden] { display: none; }
+.badge-play img { width: 220px; height: auto; }
+.badge-play:active { transform: scale(.97); }
+.badge-play:focus-visible { outline: 3px solid var(--acento); outline-offset: 4px; }
 
 /* Anillo que late alrededor del botón de descarga */
 .btn--pulso::after {
