@@ -189,7 +189,9 @@
     if (descargaActiva) {
       leerReleaseDeGitHub();
     } else {
-      $$('[data-version-linea]').forEach(function (el) { el.textContent = 'Descargas pausadas'; });
+      // Sin el APK: si ya está en Google Play, eso; si no, que las descargas están en pausa
+      var enPlay = C.googlePlay && C.googlePlay.disponible && C.googlePlay.enlace;
+      $$('[data-version-linea]').forEach(function (el) { el.textContent = enPlay ? 'Gratis en Google Play' : 'Descargas pausadas'; });
     }
 
     // Google Play

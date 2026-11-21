@@ -14,7 +14,7 @@ window.OMNIUY = {
 
   /* ---------- VERSIÓN DE LA APP ---------- */
   version: {
-    numero: "0.6.1",              // Número de versión
+    numero: "0.6.2",              // Número de versión
     etiqueta: "Pre-alfa",         // Aparece antes del número: «Pre-alfa 0.3.0»
     fecha: "2026-11-21",          // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
     // Si está en true, la web lee sola la versión y la fecha del último
@@ -36,8 +36,8 @@ window.OMNIUY = {
 
   /* ---------- GOOGLE PLAY ---------- */
   googlePlay: {
-    disponible: false,            // Cambialo a true cuando la app esté publicada
-    enlace: "",                   // Link de la ficha en Play Store (cuando exista)
+    disponible: true,             // Cambialo a true cuando la app esté publicada
+    enlace: "https://play.google.com/store/apps/details?id=app.omniuy", // Link de la ficha en Play Store
     aviso: "¡Estamos en eso! Muy pronto vas a poder bajarla desde Google Play.",
   },
 
@@ -138,7 +138,7 @@ window.OMNIUY = {
     },
 
     premium: {
-      antetitulo: "Próximamente",
+      antetitulo: "Opcional",
       titulo: "TeArrimo Premium",
       intro: "Una suscripción opcional para quienes viajan todos los días. Lo básico (mapa, horarios, tiempo real, cómo llegar y el aviso para bajarte) es gratis, siempre.",
       items: [
@@ -150,12 +150,12 @@ window.OMNIUY = {
         { icono: "paradas", titulo: "Parada intermedia", texto: "Pasá por un lugar en el camino y quedate el tiempo que quieras." },
         { icono: "llegada", titulo: "Favoritos sin límite", texto: "Todos los lugares y paradas que quieras (gratis: 2 lugares y 2 paradas)." },
       ],
-      // Tarifas (pesos uruguayos). Se muestran abajo de los beneficios.
+      // Tarifas (en dólares: en Uruguay Google Play cobra en dólares). Se muestran abajo de los beneficios.
       precios: [
-        { nombre: "Mensual", precio: "$50", cada: "por mes" },
-        { nombre: "Anual", precio: "$300", cada: "por año", etiqueta: "Ahorrás 50 %" },
+        { nombre: "Mensual", precio: "US$ 1,23", cada: "por mes" },
+        { nombre: "Anual", precio: "US$ 7,39", cada: "por año", etiqueta: "Ahorrás 50 %" },
       ],
-      notaPrecios: "Va a estar disponible cuando TeArrimo esté en Google Play. Podés cancelar cuando quieras.",
+      notaPrecios: "Probalo un mes gratis si nunca tuviste Premium. Se paga con Google Play y cancelás cuando quieras.",
     },
 
     /* ---------- SE VIENE (la próxima versión) ----------
@@ -170,12 +170,13 @@ window.OMNIUY = {
 
     novedades: {
       antetitulo: "Lo nuevo",
-      titulo: "Novedades de la versión 0.6.1",
-      intro: "Compará tus opciones de un vistazo, cambiá de ómnibus sin cortar el viaje y, si querés, suscribite a Premium. Ya está en la prueba de Google Play.",
+      titulo: "Novedades de la versión 0.6.2",
+      intro: "¡TeArrimo ya está en Google Play para todos! Y trae lo último: compará opciones de un vistazo, cambiá de ómnibus sin cortar el viaje y probá Premium un mes gratis.",
       items: [
+        { icono: "play", titulo: "TeArrimo, para todos", texto: "Ya está en Google Play para todo el mundo. ¡Gracias a quienes la probaron y nos ayudaron a mejorarla!" },
+        { icono: "estrella", titulo: "Probá Premium un mes gratis", texto: "Si nunca tuviste Premium, el primer mes es gratis, en el plan mensual o en el anual. Cancelás cuando quieras desde Google Play." },
         { icono: "ruta", titulo: "Compará opciones deslizando", texto: "En «Cómo llegar», cada opción en su tarjeta: deslizá para pasar de una a otra y mirá en el mapa la que estás viendo, con las demás transparentes." },
         { icono: "bus", titulo: "Cambiá de ómnibus en pleno viaje", texto: "¿Viene otro que te sirve más? Tocá «Cambiar ómnibus», elegí otra opción y el viaje sigue con ese, sin cortarse." },
-        { icono: "estrella", titulo: "Premium por suscripción", texto: "Ya podés suscribirte a Premium desde la app, por mes o por año, con Google Play. Mientras dure la prueba, lo seguís teniendo de regalo." },
         { icono: "buscar", titulo: "Más rápida", texto: "El buscador y las direcciones responden antes, y el mapa muestra siempre tu viaje entero cuando minimizás la tarjeta." },
       ],
     },
@@ -184,12 +185,12 @@ window.OMNIUY = {
       antetitulo: "Preguntas frecuentes",
       titulo: "¿Dudas?",
       preguntas: [
-        { pregunta: "¿TeArrimo es gratis?", respuesta: "Sí, descargarla y usarla es gratis. Más adelante vamos a sumar TeArrimo Premium, una suscripción opcional ($50 por mes o $300 por año) con el saldo de tu tarjeta STM, el precio de todos tus viajes según tu boleto, widgets y más. Lo básico sigue siendo gratis, siempre." },
+        { pregunta: "¿TeArrimo es gratis?", respuesta: "Sí, descargarla y usarla es gratis: mapa, horarios, tiempo real, cómo llegar y el aviso para bajarte. TeArrimo Premium es una suscripción opcional (US$ 1,23 por mes o US$ 7,39 por año, con Google Play) con el saldo de tu tarjeta STM, el precio de todos tus viajes según tu boleto, widgets y más. Si nunca lo tuviste, el primer mes es gratis. Lo básico sigue siendo gratis, siempre." },
         { pregunta: "¿Tiene anuncios?", respuesta: "No, y no va a tener. TeArrimo no muestra anuncios en ninguna versión, ni en la gratis ni en Premium." },
         { pregunta: "¿Qué hacen con mis datos?", respuesta: "Nada: TeArrimo no tiene cuentas, anuncios ni rastreo, y no guarda tus datos en servidores propios. Tus favoritos, viajes y el saldo de tu tarjeta STM quedan en tu celular (y en la copia de seguridad de tu cuenta de Google, si la tenés activada), y tu ubicación no se envía a TeArrimo. Todo el detalle está en la Política de privacidad, al pie de esta página." },
-        { pregunta: "¿Cómo la consigo?", respuesta: "Ya podés sumarte a la prueba en Google Play (solo Android). Mientras dura, Premium es de regalo.\n\n1. Unite al grupo de testers, con la misma cuenta de Google de tu Play Store: https://groups.google.com/g/testers-omniuy\n2. Entrá a https://play.google.com/apps/testing/app.omniuy y tocá «Convertirse en tester» (o «verificador»). Si dice que no tenés acceso, esperá unos minutos y probá de nuevo.\n3. Descargá TeArrimo desde Google Play: https://play.google.com/store/apps/details?id=app.omniuy\n\nTe pedimos que no salgas de la prueba ni la desinstales por al menos 14 días: así Google nos deja publicarla para todos. Errores, ideas o críticas: soporte@tearrimo.app" },
+        { pregunta: "¿Cómo la consigo?", respuesta: "Bajala gratis desde Google Play (solo Android): https://play.google.com/store/apps/details?id=app.omniuy\n\nErrores, ideas o críticas: soporte@tearrimo.app" },
         { pregunta: "¿Funciona fuera de Montevideo?", respuesta: "En el área metropolitana, sí: además de las líneas urbanas de Montevideo, tiene las líneas suburbanas a Canelones y San José, con sus horarios (estas todavía sin tiempo real). Fuera de esa zona, por ahora no." },
-        { pregunta: "¿Cuándo sale en Google Play?", respuesta: "Ahora está en prueba (ver «¿Cómo la consigo?»): cuando termine, la publicamos para todos y el botón de Google Play de esta página te va a llevar directo." },
+        { pregunta: "¿Cómo cancelo Premium?", respuesta: "Cuando quieras, desde Google Play (tu foto › Pagos y suscripciones › Suscripciones › TeArrimo) o desde la app, en la pantalla de Premium › «Administrar o cancelar la suscripción». Si estás en el mes gratis y cancelás antes de que termine, no se te cobra nada. Ojo: desinstalar la app no cancela la suscripción." },
         { pregunta: "¿Hay versión para iPhone?", respuesta: "Por ahora no: TeArrimo es solo para Android." },
         { pregunta: "Encontré un error o tengo una idea, ¿a quién le aviso?", respuesta: "¡Nos encanta! Escribinos a soporte@tearrimo.app. Al ser una pre-alfa, cada comentario ayuda muchísimo." },
       ],
