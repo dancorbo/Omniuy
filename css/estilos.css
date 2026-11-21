@@ -137,7 +137,12 @@ h1, h2, h3 { line-height: 1.12; letter-spacing: -.02em; }
   cursor: help;
 }
 .btn--play:hover { background: rgba(255, 255, 255, .09); }
-.btn--play.disponible { cursor: pointer; border-style: solid; color: var(--claro); }
+.btn--play.disponible {
+  cursor: pointer; border: 0;
+  background: var(--acento); color: var(--sobre-acento);
+  box-shadow: 0 12px 28px -12px var(--acento);
+}
+.btn--play.disponible:hover { background: var(--acento); box-shadow: 0 16px 36px -12px var(--acento); }
 
 /* Anillo que late alrededor del botón de descarga */
 .btn--pulso::after {

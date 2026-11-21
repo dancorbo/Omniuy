@@ -156,9 +156,17 @@
     var descarga = C.descarga || {};
     var descargaActiva = descarga.habilitada !== false;
     var avisoPausa = descarga.avisoPausa || 'Las descargas están pausadas por un momento.';
+    var enlacePlay = C.googlePlay && C.googlePlay.disponible && C.googlePlay.enlace;
     $$('[data-apk]').forEach(function (a) {
       if (descargaActiva) {
         if (descarga.enlaceApk) a.href = descarga.enlaceApk;
+        return;
+      }
+      // El botón de la barra superior lleva a Google Play en lugar del APK
+      if (enlacePlay && a.closest('.barra')) {
+        a.href = enlacePlay;
+        a.target = '_blank';
+        a.rel = 'noopener';
         return;
       }
       // Descargas en pausa: sin botones de APK ni explicación de cómo instalarlo (queda Google Play)
@@ -201,7 +209,7 @@
         boton.href = play.enlace;
         boton.removeAttribute('aria-disabled');
         boton.removeAttribute('role');
-        boton.classList.add('disponible');
+        boton.classList.add('disponible', 'btn--pulso');
         $('small', boton).textContent = 'Disponible en';
       } else {
         boton.addEventListener('click', function (e) {

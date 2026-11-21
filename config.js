@@ -15,7 +15,7 @@ window.OMNIUY = {
   /* ---------- VERSIÓN DE LA APP ---------- */
   version: {
     numero: "0.6.2",              // Número de versión
-    etiqueta: "Pre-alfa",         // Aparece antes del número: «Pre-alfa 0.3.0»
+    etiqueta: "Versión",          // Aparece antes del número: «Versión 0.6.2»
     fecha: "2026-11-21",          // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
     // Si está en true, la web lee sola la versión y la fecha del último
     // Release de GitHub. Si falla, usa los datos de arriba.
@@ -192,7 +192,7 @@ window.OMNIUY = {
         { pregunta: "¿Funciona fuera de Montevideo?", respuesta: "En el área metropolitana, sí: además de las líneas urbanas de Montevideo, tiene las líneas suburbanas a Canelones y San José, con sus horarios (estas todavía sin tiempo real). Fuera de esa zona, por ahora no." },
         { pregunta: "¿Cómo cancelo Premium?", respuesta: "Cuando quieras, desde Google Play (tu foto › Pagos y suscripciones › Suscripciones › TeArrimo) o desde la app, en la pantalla de Premium › «Administrar o cancelar la suscripción». Si estás en el mes gratis y cancelás antes de que termine, no se te cobra nada. Ojo: desinstalar la app no cancela la suscripción." },
         { pregunta: "¿Hay versión para iPhone?", respuesta: "Por ahora no: TeArrimo es solo para Android." },
-        { pregunta: "Encontré un error o tengo una idea, ¿a quién le aviso?", respuesta: "¡Nos encanta! Escribinos a soporte@tearrimo.app. Al ser una pre-alfa, cada comentario ayuda muchísimo." },
+        { pregunta: "Encontré un error o tengo una idea, ¿a quién le aviso?", respuesta: "¡Nos encanta! Escribinos a soporte@tearrimo.app. Cada comentario nos ayuda a mejorarla." },
       ],
     },
 
