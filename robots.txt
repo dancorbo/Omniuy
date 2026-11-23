@@ -30,3 +30,5 @@ Disallow: /
 User-agent: *
 Disallow: /api/
 Allow: /
+
+Sitemap: https://www.tearrimo.app/sitemap.xml

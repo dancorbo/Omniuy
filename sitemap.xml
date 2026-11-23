@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Las páginas de TeArrimo para los buscadores. Si se agrega una página nueva, sumarla acá. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.tearrimo.app/</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.tearrimo.app/privacidad/</loc>
+    <lastmod>2026-11-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.tearrimo.app/datos/</loc>
+  </url>
+  <url>
+    <loc>https://www.tearrimo.app/legal/</loc>
+  </url>
+</urlset>

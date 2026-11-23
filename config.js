@@ -8,6 +8,9 @@
    • Cambiá solo lo que está ENTRE COMILLAS "así".
    • No borres las comas del final de cada línea.
    • Si un texto lleva comillas adentro, usá estas: « »
+   • Después de cambiar algo, correr (desde la carpeta de la web):
+       node herramientas/armar-html.mjs
+     Así index.html trae los textos nuevos escritos para Google.
    ===================================================================== */
 
 window.OMNIUY = {
