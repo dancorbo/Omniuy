@@ -17,9 +17,9 @@ window.OMNIUY = {
 
   /* ---------- VERSIÓN DE LA APP ---------- */
   version: {
-    numero: "0.6.2",              // Número de versión
-    etiqueta: "Versión",          // Aparece antes del número: «Versión 0.6.2»
-    fecha: "2026-11-21",          // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
+    numero: "0.6.3",              // Número de versión
+    etiqueta: "Versión",          // Aparece antes del número: «Versión 0.6.3»
+    fecha: "2026-11-25",         // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
     // Si está en true, la web lee sola la versión y la fecha del último
     // Release de GitHub. Si falla, usa los datos de arriba.
     leerDeGitHub: false,
@@ -173,14 +173,13 @@ window.OMNIUY = {
 
     novedades: {
       antetitulo: "Lo nuevo",
-      titulo: "Novedades de la versión 0.6.2",
-      intro: "¡TeArrimo ya está en Google Play para todos! Y trae lo último: compará opciones de un vistazo, cambiá de ómnibus sin cortar el viaje y probá Premium un mes gratis.",
+      titulo: "Novedades de la versión 0.6.3",
+      intro: "Los ómnibus en vivo ahora avanzan por la calle, ves tu ómnibus en el mapa mientras viajás y el mapa anda más suave.",
       items: [
-        { icono: "play", titulo: "TeArrimo, para todos", texto: "Ya está en Google Play para todo el mundo. ¡Gracias a quienes la probaron y nos ayudaron a mejorarla!" },
-        { icono: "estrella", titulo: "Probá Premium un mes gratis", texto: "Si nunca tuviste Premium, el primer mes es gratis, en el plan mensual o en el anual. Cancelás cuando quieras desde Google Play." },
-        { icono: "ruta", titulo: "Compará opciones deslizando", texto: "En «Cómo llegar», cada opción en su tarjeta: deslizá para pasar de una a otra y mirá en el mapa la que estás viendo, con las demás transparentes." },
-        { icono: "bus", titulo: "Cambiá de ómnibus en pleno viaje", texto: "¿Viene otro que te sirve más? Tocá «Cambiar ómnibus», elegí otra opción y el viaje sigue con ese, sin cortarse." },
-        { icono: "buscar", titulo: "Más rápida", texto: "El buscador y las direcciones responden antes, y el mapa muestra siempre tu viaje entero cuando minimizás la tarjeta." },
+        { icono: "vivo", titulo: "Ómnibus que avanzan por la calle", texto: "Los ómnibus en vivo se mueven suave por su recorrido, en vez de saltar cada tanto. Si preferís, lo apagás en Ajustes." },
+        { icono: "bus", titulo: "Tu ómnibus en el mapa", texto: "Mientras viajás, en vez del punto azul se ve la chapita de tu línea con borde verde. Al bajarte vuelve el punto." },
+        { icono: "ruta", titulo: "Un mapa más fluido", texto: "El mapa se mueve más suave y gasta menos con la app abierta, y los avisos del viaje se leen mejor." },
+        { icono: "correo", titulo: "Contanos qué ves", texto: "¿Encontraste una falla o tenés una idea? Escribinos desde Ajustes, en «¿Viste una falla o tenés una idea?»." },
       ],
     },
 
