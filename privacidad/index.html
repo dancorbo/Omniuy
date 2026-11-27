@@ -86,6 +86,7 @@
       <ul>
         <li>Lugares y paradas favoritas, viajes recientes, búsquedas recientes y líneas buscadas.</li>
         <li>Avisos de viajes planificados y el viaje en curso.</li>
+        <li>Los avisos de transporte que bajó la app (desvíos, cortes, fallas) y cuáles ya viste o te notificó.</li>
         <li>Tus viajes frecuentes: origen, destino, sus trayectos, los días y la hora del aviso.</li>
         <li>Tus ajustes: tema, ritmo de caminata, tipo de boleto.</li>
         <li>Los datos de tus tarjetas STM que se ven en STM en línea (ver el punto 4).</li>
@@ -118,9 +119,14 @@
           viendo; <strong>nunca se envía tu ubicación</strong>. Como toda
           conexión, el servidor recibe la dirección IP de tu conexión: la usa solo en la memoria, durante un minuto,
           para que nadie haga demasiados pedidos, y <strong>no la guarda</strong> (tampoco guarda qué líneas
-          consultaste). Es un servidor alquilado a Vultr, en São Paulo (Brasil).</li>
+          consultaste). Es un servidor alquilado a Vultr, en São Paulo (Brasil).<br>
+          Además, cada unos 30 minutos (también con la app cerrada), la app le pide al servidor la lista de
+          <strong>avisos de transporte</strong> (desvíos, cortes, fallas del tiempo real). Es la misma lista para todos:
+          <strong>no se envía nada tuyo, ni siquiera tus líneas</strong>; la app decide en tu celular cuáles son de las
+          líneas que usás.</li>
         <li><strong>Intendencia de Montevideo</strong>: el servidor de TeArrimo le pide a la Intendencia la posición de
-          todos los ómnibus en servicio, cada unos segundos. La Intendencia ve solo al servidor, no a vos.</li>
+          todos los ómnibus en servicio, cada unos segundos, y lee sus noticias públicas de movilidad para armar los
+          avisos de transporte. La Intendencia ve solo al servidor, no a vos.</li>
         <li><strong>OpenFreeMap</strong> (el mapa, cuando hay internet): pide las partes del mapa que estás viendo.
           Sin internet, la app usa el mapa de Montevideo que trae adentro.</li>
         <li><strong>Buscadores de direcciones</strong>: cuando buscás una dirección con número de puerta y hay internet,
@@ -140,7 +146,7 @@
         <li><strong>Ubicación</strong> (precisa o aproximada; con la pantalla apagada, solo durante un viaje que iniciaste, nunca «todo el tiempo»):
           ver el punto 2.</li>
         <li><strong>Notificaciones y vibración</strong>: avisos del viaje, timbre para bajarte, avisos de viajes planificados y
-          de tus viajes frecuentes.</li>
+          de tus viajes frecuentes, y avisos de transporte de tus líneas o generales (se apagan en Ajustes).</li>
         <li><strong>Usar la batería sin restricciones</strong> (opcional): para que Android no corte un viaje en curso.</li>
         <li><strong>Iniciarse al encender el celular</strong>: solo para volver a programar tus avisos de viaje y de
           tus viajes frecuentes.</li>
