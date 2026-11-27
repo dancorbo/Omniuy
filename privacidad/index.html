@@ -61,11 +61,11 @@
     <div class="contenedor contenedor--angosto">
       <span class="antetitulo">Privacidad</span>
       <h1>Política de privacidad</h1>
-      <p class="fecha">Última actualización: 21 de noviembre de 2026</p>
+      <p class="fecha">Última actualización: 27 de noviembre de 2026</p>
 
       <div class="resumen">
-        <p><strong>En pocas palabras:</strong> TeArrimo no tiene cuentas, no muestra anuncios, no usa estadísticas ni
-          rastreo y no vende datos. Lo que guardás (favoritos, viajes recientes, el saldo de tu tarjeta STM) queda
+        <p><strong>En pocas palabras:</strong> la app TeArrimo no tiene cuentas, no muestra anuncios, no usa estadísticas ni
+          rastreo y no vende datos (esta página web solo cuenta visitas, sin cookies: ver el punto 10). Lo que guardás (favoritos, viajes recientes, el saldo de tu tarjeta STM) queda
           <strong>en tu celular</strong> (y en la copia de seguridad de tu cuenta de Google, si la tenés activada). Tu ubicación se usa en el celular para el mapa y el viaje, y
           <strong>no se envía a TeArrimo</strong>. El tiempo real de los ómnibus pasa por un servidor de TeArrimo que
           <strong>no guarda nada</strong>.</p>
@@ -95,6 +95,7 @@
       <ul>
         <li>Lugares y paradas favoritas, viajes recientes, búsquedas recientes y líneas buscadas.</li>
         <li>Avisos de viajes planificados y el viaje en curso.</li>
+        <li>Los avisos de transporte que bajó la app (desvíos, cortes, fallas) y cuáles ya viste o te notificó.</li>
         <li>Tus viajes frecuentes: origen, destino, sus trayectos, los días y la hora del aviso.</li>
         <li>Tus ajustes: tema, ritmo de caminata, tipo de boleto.</li>
         <li>Los datos de tus tarjetas STM que se ven en STM en línea (ver el punto 4).</li>
@@ -127,9 +128,23 @@
           viendo; <strong>nunca se envía tu ubicación</strong>. Como toda
           conexión, el servidor recibe la dirección IP de tu conexión: la usa solo en la memoria, durante un minuto,
           para que nadie haga demasiados pedidos, y <strong>no la guarda</strong> (tampoco guarda qué líneas
-          consultaste). Es un servidor alquilado a Vultr, en São Paulo (Brasil).</li>
+          consultaste). Es un servidor alquilado a Vultr, en São Paulo (Brasil).<br>
+          Además, cada unos 30 minutos (también con la app cerrada), la app le pide al servidor la lista de
+          <strong>avisos de transporte</strong> (desvíos, cortes, fallas del tiempo real). Es la misma lista para todos:
+          <strong>no se envía nada tuyo, ni siquiera tus líneas</strong>; la app decide en tu celular cuáles son de las
+          líneas que usás. En el mismo momento baja la lista de <strong>correcciones de lugares</strong> (lugares que se
+          mudaron o cerraron), también igual para todos y sin mandar nada.<br>
+          Si tocás <strong>«Este lugar está mal»</strong>, la app le manda al servidor el nombre del lugar y dónde está
+          en el mapa, y lo que vos marques o escribas: qué le pasa, dónde está de verdad (un punto en el mapa o una
+          dirección) y tu comentario, junto con la versión de la app. <strong>No se manda nada que te
+          identifique</strong>: ni tu ubicación, ni datos del celular, ni una cuenta. Para que nadie mande demasiados, el
+          servidor usa la dirección IP de tu conexión solo en la memoria, y la olvida sola al rato (a más tardar, un poco
+          más de una hora después); <strong>no la guarda</strong> con el reporte. Lo revisamos a mano; si
+          escribiste una dirección, el servidor la busca en el buscador de direcciones del Estado (IDE Uruguay) para
+          ubicarla. Cada reporte se borra a los 30 días de revisado.</li>
         <li><strong>Intendencia de Montevideo</strong>: el servidor de TeArrimo le pide a la Intendencia la posición de
-          todos los ómnibus en servicio, cada unos segundos. La Intendencia ve solo al servidor, no a vos.</li>
+          todos los ómnibus en servicio, cada unos segundos, y lee sus noticias públicas de movilidad para armar los
+          avisos de transporte. La Intendencia ve solo al servidor, no a vos.</li>
         <li><strong>OpenFreeMap</strong> (el mapa, cuando hay internet): pide las partes del mapa que estás viendo.
           Sin internet, la app usa el mapa de Montevideo que trae adentro.</li>
         <li><strong>Buscadores de direcciones</strong>: cuando buscás una dirección con número de puerta y hay internet,
@@ -149,7 +164,7 @@
         <li><strong>Ubicación</strong> (precisa o aproximada; con la pantalla apagada, solo durante un viaje que iniciaste, nunca «todo el tiempo»):
           ver el punto 2.</li>
         <li><strong>Notificaciones y vibración</strong>: avisos del viaje, timbre para bajarte, avisos de viajes planificados y
-          de tus viajes frecuentes.</li>
+          de tus viajes frecuentes, y avisos de transporte de tus líneas o generales (se apagan en Ajustes).</li>
         <li><strong>Usar la batería sin restricciones</strong> (opcional): para que Android no corte un viaje en curso.</li>
         <li><strong>Iniciarse al encender el celular</strong>: solo para volver a programar tus avisos de viaje y de
           tus viajes frecuentes.</li>
@@ -189,8 +204,10 @@
 
       <h2>10. Esta página web</h2>
       <p>La página tearrimo.app está alojada en Vercel y usa la letra Plus Jakarta Sans de Google Fonts. Como en
-        cualquier sitio, esos servicios pueden registrar datos técnicos de la visita (como la dirección IP). La página
-        no usa cookies propias, estadísticas ni publicidad.</p>
+        cualquier sitio, esos servicios pueden registrar datos técnicos de la visita (como la dirección IP). Para saber
+        cuánta gente entra, la página cuenta las visitas con Vercel Web Analytics: no usa cookies ni identifica a quien
+        visita, y solo vemos totales (cuántas visitas, desde qué país, qué páginas y desde qué sitio llegaron). La
+        página no usa cookies ni publicidad.</p>
 
       <h2>11. Tus derechos</h2>
       <p>De acuerdo con la Ley N.º 18.331 de Protección de Datos Personales de Uruguay, tenés derecho a acceder,
@@ -221,5 +238,6 @@
       </div>
     </div>
   </footer>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
