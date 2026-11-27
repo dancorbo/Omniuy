@@ -17,9 +17,9 @@ window.OMNIUY = {
 
   /* ---------- VERSIÓN DE LA APP ---------- */
   version: {
-    numero: "0.6.3",              // Número de versión
-    etiqueta: "Versión",          // Aparece antes del número: «Versión 0.6.3»
-    fecha: "2026-11-25",         // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
+    numero: "0.6.4",              // Número de versión
+    etiqueta: "Versión",          // Aparece antes del número: «Versión 0.6.4»
+    fecha: "2026-11-27",         // Fecha de la versión (AAAA-MM-DD, o escribila como quieras)
     // Si está en true, la web lee sola la versión y la fecha del último
     // Release de GitHub. Si falla, usa los datos de arriba.
     leerDeGitHub: false,
@@ -173,13 +173,13 @@ window.OMNIUY = {
 
     novedades: {
       antetitulo: "Lo nuevo",
-      titulo: "Novedades de la versión 0.6.3",
-      intro: "Los ómnibus en vivo ahora avanzan por la calle, ves tu ómnibus en el mapa mientras viajás y el mapa anda más suave.",
+      titulo: "Novedades de la versión 0.6.4",
+      intro: "TeArrimo estrena cara, te avisa de los desvíos de tus líneas y te deja avisarnos si un lugar está mal.",
       items: [
-        { icono: "vivo", titulo: "Ómnibus que avanzan por la calle", texto: "Los ómnibus en vivo se mueven suave por su recorrido, en vez de saltar cada tanto. Si preferís, lo apagás en Ajustes." },
-        { icono: "bus", titulo: "Tu ómnibus en el mapa", texto: "Mientras viajás, en vez del punto azul se ve la chapita de tu línea con borde verde. Al bajarte vuelve el punto." },
-        { icono: "ruta", titulo: "Un mapa más fluido", texto: "El mapa se mueve más suave y gasta menos con la app abierta, y los avisos del viaje se leen mejor." },
-        { icono: "correo", titulo: "Contanos qué ves", texto: "¿Encontraste una falla o tenés una idea? Escribinos desde Ajustes, en «¿Viste una falla o tenés una idea?»." },
+        { icono: "estrella", titulo: "La app, con cara nueva", texto: "Colores y letra nuevos, pantallas más ordenadas y un modo claro más prolijo, con el mismo estilo que la página." },
+        { icono: "campana", titulo: "Avisos de transporte", texto: "Tocá la campanita de arriba para ver desvíos y cambios de tus líneas y avisos generales. Si afectan a tus líneas, te llega una notificación." },
+        { icono: "pin", titulo: "¿Un lugar está mal?", texto: "Si un lugar aparece donde no es, avisanos desde «Cómo llegar» y lo corregimos para todos." },
+        { icono: "buscar", titulo: "Un buscador más vivo", texto: "Entiende abreviaturas y nombres populares de calles, y encuentra paradas por su número." },
       ],
     },
 
