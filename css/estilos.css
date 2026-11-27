@@ -156,6 +156,27 @@ h1, h2, h3 { line-height: 1.12; letter-spacing: -.02em; }
 .marca { display: inline-flex; align-items: center; gap: 10px; color: var(--escena-texto); text-decoration: none; font-weight: 800; font-size: 1.2rem; letter-spacing: -.01em; }
 /* Logo de dos colores (como el panel): «Te» del color del texto, «Arrimo» verde */
 .marca b { color: var(--escena-marca); font-weight: inherit; }
+
+/* Botón sol/luna (js/tema.js): en claro se ve la luna (para pasar a oscuro), en oscuro el sol */
+.barra__acciones { display: flex; align-items: center; gap: 8px; }
+.tema {
+  display: inline-grid; place-items: center; flex: none;
+  width: 40px; height: 40px; padding: 0; border-radius: 50%;
+  border: 1px solid var(--escena-chip-borde); background: var(--escena-chip); color: var(--escena-texto);
+  cursor: pointer; -webkit-tap-highlight-color: transparent;
+  transition: background-color .2s, transform .15s;
+}
+.tema:hover { background: var(--escena-linea); }
+.tema:active { transform: scale(.94); }
+.tema:focus-visible { outline: 3px solid var(--acento); outline-offset: 3px; }
+.tema svg { width: 20px; height: 20px; }
+.tema__sol { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .tema__sol { display: block; }
+  :root:not([data-theme="light"]) .tema__luna { display: none; }
+}
+:root[data-theme="dark"] .tema__sol { display: block; }
+:root[data-theme="dark"] .tema__luna { display: none; }
 .marca img { width: 34px; height: 34px; border-radius: 10px; }
 
 /* ---------- Botones ---------- */
