@@ -20,8 +20,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/estilos.css">
   <style>
-    /* La barra de arriba va sobre fondo claro: acá lleva el fondo oscuro (si no, "TeArrimo" queda blanco sobre blanco) */
-    .barra { background: var(--principal, #0A0A0A); }
+    /* La barra de arriba siempre con fondo (acá no hay portada detrás): claro u oscuro según el modo */
+    .barra { background: var(--barra-fondo, #0A0A0A); box-shadow: 0 1px 0 var(--escena-linea, transparent); }
     .legal { padding: 120px 0 72px; }
     .legal h1 { font-size: clamp(2rem, 5vw, 2.8rem); margin: 8px 0 6px; }
     .legal h2 { font-size: 1.3rem; margin: 40px 0 10px; }
@@ -42,7 +42,7 @@
     <div class="contenedor barra__in">
       <a class="marca" href="/" aria-label="TeArrimo, inicio">
         <img src="/img/logo.svg" alt="" width="34" height="34">
-        <span>TeArrimo</span>
+        <span>Te<b>Arrimo</b></span>
       </a>
       <a class="btn btn--acento btn--chico" href="/">Volver al inicio</a>
     </div>
@@ -202,7 +202,7 @@
       <div>
         <a class="marca" href="/">
           <img src="/img/logo.svg" alt="" width="34" height="34">
-          <span>TeArrimo</span>
+          <span>Te<b>Arrimo</b></span>
         </a>
       </div>
       <div class="pie__legal">
